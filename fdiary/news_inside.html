@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>fDiary</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="paginator3000/paginator3000.css" type="text/css" />
+	<script type="text/javascript" src="paginator3000/paginator3000.js"></script>
+</head>
+<body>
+	
+    <div class="container">
+    
+        <div class="top-banner"><img src="images/content/banner_730_90.jpg" alt="" /></div>
+        
+        <div class="header-links">
+            <dl class="services">
+                <dt><strong>F.Сервисы:</strong></dt>
+                <dd><a href="#">Проект 1</a></dd>
+                <dd><a href="#">Проект 2</a></dd>
+                <dd><a href="#">Проект 3</a></dd>
+                <dd><a href="#">Проект 4</a></dd>
+            </dl>
+            <ul class="links">
+            	<li><a href="#" class="twitter">Twitter</a></li>
+            	<li><a href="#" class="rss">Центр подписки</a></li>
+            </ul>
+        </div>
+        
+        <div class="header">
+            <a href="#" class="logo"><img src="images/fdiary_logo.png" alt="" /></a>
+            <div class="search">
+                <fieldset>
+                	<form action="" method="post">
+						<p class="search-box">
+							<input class="input" type="text" name="query" id="query" /><input type="image" src="images/btn_search.png" alt="Найти" />
+						</p>
+						<label for="search_rubric"><input type="radio" name="search_type" id="search_rubric" />По разделу</label>
+						<label for="search_site"><input type="radio" name="search_type" id="search_site" />По сайту</label>
+                    </form>
+                </fieldset>
+            </div>
+            <dl class="user">
+				<dt class="avatar"><img src="images/avatar.jpg" alt="" /></dt>
+				<dd class="inbox"><img src="images/ico_inbox.png" alt="" />( <a href="#">1</a> )</dd>
+				<dd class="logout"><input type="image" src="images/btn_logout.png" alt="Выйти" /></dd>
+                <dd class="username"><a href="#">Homer Simpson123</a></dd>
+                <dd class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></dd>
+                <dd class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /><img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></dd>
+            </dl>
+            <div class="widget"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active home"><a href="#">На главную</a></li>
+                <li><a href="#">Персональная часть</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">F. Новости</a></li>
+                <li><a href="#">F. Сообщество</a></li>
+                <li><a href="#">Энциклопедия рыбалки</a></li>
+                <li><a href="#">F. Отчеты</a></li>
+                <li><a href="#">F. Статистика</a></li>
+                <li><a href="#">F. Рейтинги</a></li>
+                <li><a href="#">F. Галерея</a></li>
+                <li><a href="#">F. Форум</a></li>
+            </ul>
+        </div>
+        
+        <div class="wrap">
+
+            <div class="content">
+                <div class="news-filter">
+                    <ul class="actions">
+                        <li class="add_news"><a href="#">Добавить новость</a></li>
+                        <li class="add_article"><a href="#">Добавить статью</a></li>
+                        <li class="add_report"><a href="#">Добавить отчет</a></li>
+                        <li class="print"><a href="#">Версия для печати</a></li>
+                        <li class="share"><a href="#">Отправить другу</a></li>
+                    </ul>
+                    <ul class="nav-year">
+                        <li class="active">2011</li>
+                        <li><a href="#">2010</a></li>
+                        <li><a href="#">2009</a></li>
+                    </ul>
+                    <ul class="nav-month">
+                        <li><a href="#">Январь</a> (78)</li>
+                        <li><a href="#">Февраль</a> (4)</li>
+                        <li><a href="#">Март</a> (24)</li>
+                        <li class="active">Апрель (449)</li>
+                        <li><a href="#">Май</a> (126)</li>
+                        <li><a href="#">Июнь</a> (213)</li>
+                    </ul>
+                    <ul class="nav-month">
+                        <li><a href="#">Июль</a> (3)</li>
+                        <li><a href="#">Август</a> (60)</li>
+                        <li><span>Сентябрь</span></li>
+                        <li><span>Октябрь</span></li>
+                        <li><span>Ноябрь</span></li>
+                        <li><span>Декабрь</span></li>
+                    </ul>
+                    <table class="nav-date" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>Пн</th>
+                            <th>Вт</th>
+                            <th>Ср</th>
+                            <th>Чт</th>
+                            <th>Пт</th>
+                            <th>Сб</th>
+                            <th>Вс</th>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td class="active">12</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="navbar">
+					<div class="navigation">Главная &nbsp;&gt;&nbsp; <a href="#">F. Новости </a></div>
+					« <a href="#">Назад</a>
+				</div>
+                
+				<div class="news-article">
+					<div class="font-size">
+						<strong>Размер<br />шрифта</strong>
+						<span class="holder active"><small class="small">A</small></span>
+						<span class="holder"><span>A</span></span>
+						<span class="holder"><big class="big">A</big></span>
+					</div>
+					<h1>Семи жителям Лос-Анджелеса предъявлены обвинения</h1>
+					<span class="date">28.04.2010</span>
+					<div class="article-img"><img src="images/content/news_big_image.jpg" alt="" /></div>
+					<p><strong>Манеру западных производителей досконально прописывать все тонкости пользования тем или иным товаром уже высмеивали не раз. Однако беда в том, что абсурдные, на первый взгляд, пункты в инструкции по применению появляются зачастую не сами по себе, а в результате выигранных странноватыми потребителями судебных тяжб. Чего стоит одна только история с кошкой, которую ее добросердечная хозяйка додумалась высушить после купания в микроволновой печи.</strong></p>
+					<p>Некому было американской домохозяйке разъяснить, что на пользу ее любимице такая процедура не пойдет, а в руководстве пользователя к микроволновке об этом ни слова не было сказано. Вот и страхуются компании от таких потребителей. Приводим «золотое» собрание самых смешных инструкций к применению. Вот и страхуются компании от таких потребителей. Приводим «золотое» собрание самых смешных инструкций к применению.</p>
+					<blockquote>Цитата в тексте:<br />Инструкция к электрическим фонарям: «Предназначены для использования в темноте в качестве источника света». Этикетка на коробке с кроссовками: «Среднее количество предметов в коробке: 2». Инструкция к электродрели: «Осторожно! Не предназначено для сверления зубов!». Инструкция к газонокосилке: «Перед покосом убедитесь, что в траве нет мелкого  рогатого скота, не направляйте прибор на живых людей во избежание наматывания отдельных частей тела на подвижные части прибора!».</blockquote>
+					<p>Инструкция к детской коляске: «Перед складыванием удалить ребенка». Надпись на зажигалке: «Не использовать в кармане брюк». Надпись на сливном бачке: «Воду не пить». Из инструкции к установке оконной рамы: «Использование сетки от насекомых не предотвращает выпадения детей из окон». Инструкция к стиральной машине: «Не стирать кошек».</p>
+					<p><strong>Список маркированный:</strong></p>
+					<ul>
+						<li>Инструкция к микроволновой печи: «Не предназначена для живых животных».</li>
+						<li>На пакете чипсов: «Вы можете выиграть! Чтобы участвовать в лотерее, покупать чипсы необязательно.</li>
+						<li>Правила розыгрыша находятся внутри пакета».</li>
+						<li>На упаковке шапочки для душа: «Размер: одна голова».</li>
+						<li>На дне коробки с тортом: «Не переворачивать».</li>
+					</ul>
+					<p>На коробке для замороженной пиццы: «После разогревания еда будет горячей». На утюге: «Не гладьте одежду на теле». На упаковке детского сиропа от кашля: «Не управляйте автомобилем и не управляйте сложным технологическим оборудованием, находясь под воздействием этого лекарства».</p>
+					<div class="note">Выноска: На упаковке для блокиратора руля автомобиля: «Внимание! Снимите блокиратор перед началом вождения».</div>
+					<p>На упаковке щипцов для завивки волос. Два варианта, предлагаемые разными фирмами: «Не используйте для завивки ресниц, это может привести к тяжелым травмам глаз» и «Только для наружного применения».
+</p>
+					<p>На упаковке презервативов: «Не ведите машину, когда используете наш продукт». На упаковке средства для мытья рук: «Не используйте в качестве пищи». На коробке елочной электрической гирлянды: «Используйте только внутри или снаружи». На упаковке орехов: «Осторожно! Содержит орехи».</p>
+					<p>Мужик на рыбалку пошел, сел, налил стопку, поставил рядом с собой и рыбачит. Час сидел, замучался ждать. Вдруг - клюет. Ну он подсек, достает, а с крючка маленький карасик сорвался и прямо в стакан. Мужик карася выбросил, тяпнул и дальше сидит. Вдруг к нему рыба повалила, да все крупные. Мужик наловил, сколько надо, собрался и ушел. В пруде две рыбы базарят: - А карась, падла, говорит: "Наливааают, а потом отпускаааают".</p>
+					<div class="tags">
+						<strong>Теги:</strong>
+						<a href="#">рыбалка</a>,
+						<a href="#">GTA</a>,
+						<a href="#">тушканчики</a>,
+						<a href="#">Всемирная Экономия</a>,
+						<a href="#">F.GIDs</a>
+					</div>
+				</div>
+				
+				<div class="comments-bar">
+					<div class="cb-wrap">
+						<span class="comments">Комментариев: 3</span>
+						<a href="#" class="add-comment">Добавить комментарий</a>
+					</div>
+				</div>
+				
+				<dl class="comments-list">
+					<dt><img src="images/avatar.jpg" alt="" /></dt>
+					<dd>
+						<div class="comment-wrap">
+							<ul class="info">
+								<li class="date">23.10.2010 [18:00]</li>
+								<li class="remove"><a href="#">Удалить</a></li>
+							</ul>
+							<ul class="user">
+								<li class="username"><a href="#">Simpson123</a></li>
+								<li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+								<li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /><img src="images/ico_medal_1.png" alt="" /></li>
+							</ul>
+							<p>Вообще-то я не религиозный человек, но если ты есть там наверху, спаси меня,<br /> Супермен!</p>
+						</div>
+					</dd>
+					<dt><img src="images/avatar_1.jpg" alt="" /></dt>
+					<dd>
+						<div class="comment-wrap">
+							<ul class="info">
+								<li class="date">23.10.2010 [18:00]</li>
+								<li class="remove"><a href="#">Удалить</a></li>
+							</ul>
+							<ul class="user">
+								<li class="username"><a href="#">Sheldon</a></li>
+								<li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+								<li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /><img src="images/ico_medal_1.png" alt="" /></li>
+							</ul>
+							<p>Я не доверяю банкам, я убеждён, что когда роботы восстанут, банкоматы поведут их в бой! И еще: на моем новом компьютере установлена операционная система Windows 7. Она более дружелюбна к пользователю, чем Windows Vista… И мне это не нравится!</p>
+						</div>
+					</dd>
+					<dt><img src="images/avatar_2.jpg" alt="" /></dt>
+					<dd>
+						<div class="comment-wrap">
+							<ul class="info">
+								<li class="date">23.10.2010 [18:00]</li>
+								<li class="remove"><a href="#">Удалить</a></li>
+							</ul>
+							<ul class="user">
+								<li class="username"><a href="#">Анонимус M.D.</a></li>
+								<li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+								<li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /><img src="images/ico_medal_1.png" alt="" /></li>
+							</ul>
+							<p>2 Sheldon: Хорошие новости в том, что у него осталось не так много органов, которые могут отказать!</p>
+						</div>
+					</dd>
+				</dl>
+				
+				<div class="comments-form">
+					<fieldset>
+						<form action="" method="post">
+							<label for="comment">Добавить комментарий:</label>
+							<div>
+								<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+							</div>
+							<button title="Отправить" class="button" type="submit"><span><span>Отправить</span></span></button>
+						</form>
+					</fieldset>
+				</div>
+				
+			</div>
+            
+            <div class="sidebar">
+            
+                <div class="banner banner-80">
+                    <img src="images/content/banner_300_80.jpg" alt="" />
+                </div>
+                <div class="banner banner-250">
+					<div class="banner-content">
+						<img src="images/content/banner_300_250.jpg" alt="" />
+					</div>
+                </div>
+                
+                <div class="reports">
+                    <h2 class="heading"><span>Отчеты</span></h2>
+                    <div class="headline">
+                        <div class="headline-img"><img src="images/content/news_list_image.jpg" alt="" /></div>
+                        <h3><a href="#">Название отчета</a></h3>
+                        <!-- Maybe DL? -->
+                        <ul class="report-author">
+                            <li class="username"><strong>Автор:</strong> <a href="#">Simpson123</a></li>
+                            <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                            <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /><img src="images/ico_medal_1.png" alt="" /></li>
+                        </ul>
+                        <dl>
+                            <dt>Дата:</dt>
+                            <dd>25.04.2010</dd>
+                            <dt>Количество рыбы:</dt>
+                            <dd>29</dd>
+                            <dt>Общий вес улова:</dt>
+                            <dd>3,8 кг</dd>
+                        </dl>
+                        <p>Ловил на гуйве на течении червь навозный, опарыш, тесто игнорироваись напрочь.</p>
+                        <!-- plain images? -->
+                        <div class="summary">
+                            <span class="photos">4</span>
+                            <span class="video">0</span>
+                            <span class="comments"><strong>Комментариев:</strong> <a href="#">8</a></span>
+                        </div>
+                    </div>
+                    <ol class="reports-list">
+                        <li>
+                            <div class="list-img"><img src="images/content/news_list_image.jpg" alt="" /></div>
+                            <h4><a href="#">Название отчета</a></h4>
+                            <dl>
+                                <dt class="author"><strong>Автор:</strong> <a href="#">Simpson123</a></dt>
+                                <dd class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></dd>
+                                <dd class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="list-img"><img src="images/content/news_list_image.jpg" alt="" /></div>
+                            <h4><a href="#">Название отчета</a></h4>
+                            <dl>
+                                <dt class="author"><strong>Автор:</strong> <a href="#">Simpson123</a></dt>
+                                <dd class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></dd>
+                                <dd class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></dd>
+                            </dl>
+                        </li>
+						<li>
+                            <div class="list-img"><img src="images/content/news_list_image.jpg" alt="" /></div>
+                            <h4><a href="#">Название отчета</a></h4>
+                            <dl>
+                                <dt class="author"><strong>Автор:</strong> <a href="#">Simpson123</a></dt>
+                                <dd class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></dd>
+                                <dd class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></dd>
+                            </dl>
+                        </li>
+                    </ol>
+                    <a href="#" class="more"><span>Все отчеты</span></a>
+                </div>
+                
+                <div class="banner banner-250">
+					<div class="banner-content">
+						<img src="images/content/banner_300_250.jpg" alt="" />
+					</div>
+                </div>
+                
+                <div class="articles">
+                    <h2 class="heading"><span>Статьи</span></h2>
+                    <ul class="articles-list">
+                        <li>
+							<div class="article-img"><img src="images/content/bite_fish_1.jpg" alt="" /></div>
+							<div class="article-head">
+								<h4><a href="#">Мускулатура рыб</a></h4>
+								<span class="rubric">Раздел: <a href="#">Насадки и наживки</a></span>
+							</div>
+								<p>Мускулатура, или мясо, рыб чаще всего бесцветна. Химический состав мяса, жирность, пищевые и вкусовые качества в сильной степени зависят от того, чем питается рыба и каково ее физиологическое состояние.</p>
+                        </li>
+                        <li class="last">
+                            <h4><a href="#">Растительная насадка: творожное тесто</a></h4>
+                            <span class="rubric">Раздел: <a href="#">Насадки и наживки</a></span>
+                            <p>В надежде заманить cтальноголовую форель в горные реки Санта Моники, транспортное агентство Калифорнии планирует потратить $ 935 000 чтобы оградить часть пляжа грядой камней.</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="more"><span>Все отчеты</span></a>
+                </div>
+                
+                <div class="pulp-fiction">
+                    <h2 class="heading"><span>К летнему сезону</span></h2>
+                    <div class="rounded">
+                        <div class="rounded-wrap">
+                            <ul>
+                                <li>
+                                    <h4><a href="#">Чего хочет рыба?</a></h4>
+                                    <span class="rubric">Раздел: <a href="#">Насадки и наживки</a></span>
+                                    <p>На мясо моллюсков беззубки, перловицы, а также улиток (прудовик, дрейссена, шаровка и пр.) клюют окунь, голавль, угорь и другие рыбы.</p>
+                                </li>
+                                <li>
+                                    <h4><a href="#">Супер модные приманки</a></h4>
+                                    <span class="rubric">Раздел: <a href="#">Насадки и наживки</a></span>
+                                    <p>На мясо моллюсков беззубки, перловицы, а также улиток (прудовик, дрейссена, шаровка и пр.) клюют окунь, голавль, угорь и другие рыбы.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+			
+		</div>
+        
+    </div>
+    
+    <div class="footer">	
+		
+        <div class="wrap">
+            
+            <div class="nav">
+                <ul>
+                    <li class="home"><a href="#">На главную</a></li>
+                    <li><a href="#">Персональная часть</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">F. Новости</a></li>
+                    <li><a href="#">F. Сообщество</a></li>
+                    <li><a href="#">Энциклопедия рыбалки</a></li>
+                    <li><a href="#">F. Отчеты</a></li>
+                    <li><a href="#">F. Статистика</a></li>
+                    <li><a href="#">F. Рейтинги</a></li>
+                    <li><a href="#">F. Галерея</a></li>
+                    <li><a href="#">F. Форум</a></li>
+                </ul>
+            </div>
+            
+            <p class="design"><strong>Идея и разработка:</strong> F.GiDs &copy;. 2009-2010<br /><strong>Powered By:</strong> WEDay Studio.</p>
+            
+            <p class="contacts"><strong>E-mail:</strong> info@fgids.com<br /><strong>Тел.:</strong> +38 (044) 221-45-44</p>
+            
+            <p class="copyright">Все права защищены. При цитировании и использовании любых материалов гиперссылка на FGiDs.com обязательна. Републикация авторских материалов F.GiDs возможна только с письменного согласия F.GiDs. </p>
+            
+        </div>
+    
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>IPTV</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie.css" />
+	<![endif]-->
+	<script type="text/javascript" src="js/custom_forms.js"></script>
+	<script type="text/javascript" src="js/swfobject/src/swfobject.js"></script>
+    <script type="text/javascript">
+    swfobject.registerObject("video", "9.0.115", "expressInstall.swf");
+    </script>
+</head>
+<body>
+	<div class="container">
+        <div class="header">
+        	<div class="logo"><img src="images/logo.png" height="43" width="113" alt="" /></div>
+			<div class="user-section">
+				<h1>Добрый день, Сергей Бубликов!</h1>
+				<h2>Все подключенные услуги оплачены</h2>
+				<ul class="menu">
+					<li class="active"><span><a href="#">Прямые эфиры</a></span></li>
+					<li><span><a href="#">Записи программ</a></span></li>
+					<li class="bullet"><span><a href="#">Интересные события</a></span></li>
+				</ul>
+				<dl class="controls">
+					<dt>Управление:</dt>
+					<dd><span><a href="#">Услуги</a></span></dd>
+					<dd class="bullet"><span><a href="#">История платежей</a></span></dd>
+					<dd class="bullet"><span><a href="#">Смена пароля</a></span></dd>
+				</dl>
+				<input type="image" src="images/button_logout.png" />
+			</div>
+        </div>
+        <div class="video-wrap">
+			<div class="video">
+				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="video" width="100%" height="720">
+					<param name="movie" value="player/videotub.swf" />
+					<!--[if !IE]>-->
+					<object type="application/x-shockwave-flash" data="player/videotub.swf" width="100%" height="720">
+					<!--<![endif]-->
+					<p>Alternative content</p>
+					<!--[if !IE]>-->
+					</object>
+					<!--<![endif]-->
+				</object>
+			</div>
+		</div>
+        <div class="main">
+           	<div class="video-section">
+				<a href="#" class="toggle-screen">свернуть чат</a>
+				Вместе с вами этот канал смотрят 15 человек
+			</div>
+			<div class="chatbox-wrap">
+				<div class="chatbox">
+					<ul class="chat">
+						<li><span class="name">Megamusic:</span><span class="message">Ретроконверсия национального наследия интегрирована. Маркетинг, вопреки мнению П.Друкера, традиционно искажает инструмент.</span></li>
+						<li><span class="name user-name">Aquafun:</span><span class="message">Селекция бренда стабилизирует креативный CTR, оптимизируя бюджеты</span></li>
+						<li><span class="name">Referat.ua:</span><span class="message">Фактор коммуникации, отбрасывая подробности, ускоряет институциональный ребрендинг</span></li>
+						<li><span class="name">Megamusic:</span><span class="message">Бюджеты</span></li>
+					</ul>
+					<p><input class="input" type="text" name="" /><input type="image" src="images/button_say.png" alt="Сказать" /></p>
+				</div>
+			</div>
+            <div class="projects">
+                <h2>Наши проекты</h2>
+            	<div class="project project-radio">
+					<h4>Трансляция радио</h4>
+					<span>Слушайте прямо онлайн</span>
+				</div>
+            	<div class="project project-phone">
+					<h4>Дешевые телефонные звонки</h4>
+					<span>Удобно и недорого - технология VoIP</span>
+				</div>
+				<div class="project project-internet">
+					<h4>Провайдер интернет</h4>
+					<span>Удобство и высокие скорости</span>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">&copy; 1997—2010 &laquo;<a href="#">IMB+</a>&raquo;</div>
+</body>
+</html>

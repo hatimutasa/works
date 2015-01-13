@@ -1,0 +1,32 @@
+﻿.header .choose-here .rooms .room-qty .input-text,
+.header .choose-here .district .checkbox {
+    vertical-align:middle;
+    }
+	
+* html {
+    padding-left:980px;
+	}
+	* html body {
+		zoom:1;
+		}
+		* html .shadow { margin-left:-980px; zoom:1; position:relative; }
+			
+html .sidebar .filters .active .remove img {
+	position:relative;
+	top:2px;
+}
+
+.flats-list .flat,
+.flats-list .flat-desc,
+.flats-list .flat-footer { zoom:1; }
+
+* html .filters-aplied,
+* html .column { zoom:1; }
+* html .filters-aplied { background:url(img/bg_filters.png) no-repeat 0 0; }
+
+* html .owner-info h3 { margin-top:0; }
+*+html .owner-info h3 { margin-top:0; }
+
+* html .megadrop .border-top-right { clear:right; }
+
+#mask { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=50)"; filter:opacity(50); filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); }

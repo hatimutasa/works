@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>fDiary</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="paginator3000/paginator3000.css" type="text/css" />
+	<script type="text/javascript" src="paginator3000/paginator3000.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#categories .show-hide").each(function() {
+				$(this).click(function(event) {
+					event.preventDefault();
+					$(this).parent().toggleClass("cat-hide");
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	
+    <div class="container">
+    
+        <div class="top-banner"><img src="images/content/banner_730_90.jpg" alt="" /></div>
+        
+        <div class="header-links">
+            <dl class="services">
+                <dt><strong>F.Сервисы:</strong></dt>
+                <dd><a href="#">Проект 1</a></dd>
+                <dd><a href="#">Проект 2</a></dd>
+                <dd><a href="#">Проект 3</a></dd>
+                <dd><a href="#">Проект 4</a></dd>
+            </dl>
+            <ul class="links">
+            	<li><a href="#" class="twitter">Twitter</a></li>
+            	<li><a href="#" class="rss">Центр подписки</a></li>
+            </ul>
+        </div>
+        
+        <div class="header">
+            <a href="#" class="logo"><img src="images/fdiary_logo.png" alt="" /></a>
+            <div class="search">
+                <fieldset>
+                	<form action="" method="post">
+						<p class="search-box">
+							<input class="input" type="text" name="query" id="query" /><input type="image" src="images/btn_search.png" alt="Найти" />
+						</p>
+						<label for="search_rubric"><input type="radio" name="search_type" id="search_rubric" />По разделу</label>
+						<label for="search_site"><input type="radio" name="search_type" id="search_site" />По сайту</label>
+                    </form>
+                </fieldset>
+            </div>
+            <dl class="user">
+				<dt class="avatar"><img src="images/avatar.jpg" alt="" /></dt>
+				<dd class="inbox"><img src="images/ico_inbox.png" alt="" />( <a href="#">1</a> )</dd>
+				<dd class="logout"><input type="image" src="images/btn_logout.png" alt="Выйти" /></dd>
+                <dd class="username"><a href="#">Homer Simpson123</a></dd>
+                <dd class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></dd>
+                <dd class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /><img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></dd>
+            </dl>
+            <div class="widget"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active home"><a href="#">На главную</a></li>
+                <li><a href="#">Персональная часть</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">F. Новости</a></li>
+                <li><a href="#">F. Сообщество</a></li>
+                <li><a href="#">Энциклопедия рыбалки</a></li>
+                <li><a href="#">F. Отчеты</a></li>
+                <li><a href="#">F. Статистика</a></li>
+                <li><a href="#">F. Рейтинги</a></li>
+                <li><a href="#">F. Галерея</a></li>
+                <li><a href="#">F. Форум</a></li>
+            </ul>
+        </div>
+        
+        <div class="wrap">
+
+            <div class="content">
+                
+                <div class="reference-menu">
+                    <ul class="actions">
+                        <li class="add_news"><a href="#">Добавить новость</a></li>
+                        <li class="add_report"><a href="#">Добавить отчет</a></li>
+                        <li class="share"><a href="#">Отправить другу</a></li>
+                        <li class="add_article"><a href="#">Добавить статью</a></li>
+                        <li class="print"><a href="#">Версия для печати</a></li>
+                    </ul>
+                    <div class="font-size">
+						<strong>Размер<br />шрифта</strong>
+						<span class="holder active"><small class="small">A</small></span>
+						<span class="holder"><span>A</span></span>
+						<span class="holder"><big class="big">A</big></span>
+                    </div>
+               </div>
+                
+                <div class="navbar">
+					<div class="navigation">Главная / <a href="#">Энциклопедия рыбалки</a></div>
+                </div>
+                
+                <div class="reference">
+                    <div class="reference-content">
+                        <p>В интерактивном специализированном F. Справочнике Вы найдете всю интересующую Вас информацию о рыбалке: о снастях, удилищах, приманках, способах ловли, производителях рыболовных товаров, об особенностях рыб, советы Как поймать. Несколько разделов справочника посвящены «околорыболовной» тематике: размеры одежды, единицы веса, номерные знаки Украины и т.д. Ваш рыболовный гид F.GiDs также регулярно размещает в справочнике  эксклюзивные статьи наших коллег со всего мира.</p>
+                        <p>При желании каждый посетитель  может внести свою лепту в развитие теоретической базы по рыбалке. Присоединяйтесь к редакции F. GiDs - Ваша активность позволит повысить статус в F.Сообществе рыболовов. Размещайте интересные и полезные материалы в соответствующие подразделы справочника «Статьи в тему». Высокий статус обеспечит Вам дополнительные преимущества при пользовании Web-сервисами Вашего рыболовного гида F.GiDs, количество которых будет расти.</p>
+                        <p><strong>Чтобы разместить статью в интерактивной Энциклопедии рыбалки, Вам необходимо:</strong></p>
+                        <ol>
+                        	<li><a href="#">Авторизоваться</a> или <a href="#">Зарегистрироваться</a></li>
+                        	<li>В меню <a href="#">Персональной части</a> в разделе Редакция F. GiDs кликнуть <a href="#">Добавить статью</a> в справочник</li>
+                        	<li>Обратить внимание на несложны правила размещения, так как Ваш рыболовный гид внимательно относится к качеству информации, представляемой Вашим коллегам рыболовам, и поэтому все материалы проходят премодерацию</li>
+                        </ol>
+                        <p><strong>Подсекай!</strong></p>
+                        <ul>
+                        	<li>F. Cправочник - это живая книга о рыбалке и постоянно обновляемый источник полезной информации для настоящих рыболовов.</li>
+                        	<li>F. Cправочник - это четкая структура, удобство перекрестных ссылок и емкие, но краткие материалы.</li>
+                        	<li>F. Cправочник - это советы надежного напарника.</li>
+                        </ul>
+                    </div>
+                    <div class="categories" id="categories">
+                    	<div class="category cat-hide">
+                            <a href="#" class="show-hide">Свернуть</a>
+                            <h3>Спортивный спиннинг</h3>
+                            <div class="rubric-nav">
+                                <ul class="level-1">
+                                	<li class="active">Спиннинговое удилище</li>
+                                	<li><a href="#">Катушка</a></li>
+                                	<li><a href="#">Плетеная леска</a></li>
+                                	<li><a href="#">Монофильная леска</a></li>
+                                	<li><a href="#">Поводок</a></li>
+                                	<li><a href="#">Статьи в тему</a></li>
+                                </ul>
+                                <ul class="level-2">
+                                	<li><a href="#">Бланк</a> (10)</li>
+                                	<li><a href="#">Гриф</a> (5)</li>
+                                	<li class="active">Пропускные кольца (13)</li>
+                                	<li><a href="#">ТТХ спиннинговых удилищ</a> (6)</li>
+                                	<li><a href="#">Статьи "В тему"</a> (4)</li>
+                                </ul>
+                                <ul class="level-3">
+                                	<li><a href="#">Что такое тюльпан?</a></li>
+                                	<li><a href="#">Какой формы бывают пропускные кольца?</a></li>
+                                	<li><a href="#">Зачем нужны пропускные кольца?</a></li>
+                                	<li><a href="#">Рамки пропускных колец</a></li>
+                                	<li><a href="#">Количество и высота лапок пропускных колец</a></li>
+                                	<li><a href="#">Вставки пропускных колец</a></li>
+                                	<li><a href="#">Какими характеристиками должны обладать пропускные кольца?</a></li>
+                                	<li><a href="#">Количество колец на бланке спиннингового удилища</a></li>
+                                	<li><a href="#">Варианты расположения колец на бланке спиннингового удилища (карта колец)</a></li>
+                                	<li><a href="#">Fuji New Guide Concept. «Новая концепция» от Fuji</a></li>
+                                	<li><a href="#">Схемы расстановки колец на однотипных бланках</a></li>
+                                	<li><a href="#">Пропускные кольца и шнуры</a></li>
+                                	<li><a href="#">Кольца Fuji</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    	<div class="category cat-hide">
+                    		<a href="#" class="show-hide"></a>
+                    		<h3>Искусственные приманки</h3>
+							<div class="rubric-nav">
+								<ul class="level-1">
+									<li class="active">Воблеры</li>
+									<li><a href="#">Блесны</a></li>
+									<li><a href="#">Спиннер-бейты</a></li>
+									<li><a href="#">Мягкие приманки</a></li>
+								</ul>
+								<ul class="level-2">
+									<li><a href="#">Классификация воблеров</a> (12)</li>
+									<li><a href="#">Поверхностные воблеры</a> (5)</li>
+									<li class="active">Основные элементы и расцветки воблера (4)</li>
+									<li><a href="#">Характеристики игры</a> (3)</li>
+									<li><a href="#">Проводка воблеров</a> (2)</li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Тело (корпус)</a></li>
+									<li><a href="#">Лопасть</a></li>
+									<li><a href="#">Внутреннее устройство</a></li>
+									<li><a href="#">Цвет</a></li>
+								</ul>
+							</div>
+                    	</div>
+                    	<div class="category cat-hide">
+                    		<a href="#" class="show-hide"></a>
+                    		<h3>Глухая удочка</h3>
+							<div class="rubric-nav rubric-nav-2-wide">
+								<ul class="level-1">
+									<li class="active">Удилище</li>
+									<li><a href="#">Основная леска</a></li>
+									<li><a href="#">Современный поплавок</a></li>
+									<li><a href="#">Грузила</a></li>
+									<li><a href="#">Поводок и крючок</a></li>
+									<li><a href="#">Сборка оснастки</a></li>
+									<li><a href="#">Правила эксплуатации. Уход за удилищем</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Из каких материалов производятся “глухие” маховые удилища?</a></li>
+									<li><a href="#">Маркировка “глухих” удилищ</a></li>
+									<li><a href="#">Акция махового удилища</a></li>
+									<li><a href="#">Длина махового удилища</a></li>
+									<li><a href="#">Масса махового удилища</a></li>
+									<li><a href="#">Количество колен махового удилища для глухой оснастки</a></li>
+								</ul>
+							</div>
+                    	</div>
+                    	<div class="category cat-hide">
+                    		<a href="#" class="show-hide"></a>
+                    		<h3>Крючок</h3>
+							<div class="rubric-nav rubric-nav-3">
+								<ul class="level-1">
+									<li class="active">Основные сведения</li>
+									<li><a href="#">Статьи “В тему”</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">История крючка</a></li>
+									<li><a href="#">Типы крючков</a></li>
+									<li><a href="#">Размеры крючка</a></li>
+									<li><a href="#">Толщина крючка</a></li>
+									<li><a href="#">Ушко крючка</a></li>
+								</ul>
+								<ul class="level-3 level-3-wide">
+									<li><a href="#">Цевье крючка</a></li>
+									<li><a href="#">Форма поддева крючка</a></li>
+									<li><a href="#">Форма крючка</a></li>
+									<li><a href="#">Жало крючка</a></li>
+									<li><a href="#">Офсетное жало</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Дефекты крючков</a></li>
+									<li><a href="#">Покрытие крючков</a></li>
+									<li><a href="#">Нумерация крючков - таблица соотношений</a></li>
+								</ul>
+							</div>
+                    	</div>
+                    	<div class="category cat-hide">
+                    		<a href="#" class="show-hide"></a>
+                    		<h3>Насадки и наживки</h3>
+							<div class="rubric-nav rubric-nav-3">
+								<ul class="level-1">
+									<li class="active">Животная насадка</li>
+									<li><a href="#">Растительная насадка</a></li>
+									<li><a href="#">Насекомые и их личинки</a></li>
+									<li><a href="#">Комбинированная насадка</a></li>
+									<li><a href="#">Специальное</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Черви</a></li>
+									<li><a href="#">Пиявка</a></li>
+									<li><a href="#">Рачье мясо</a></li>
+									<li><a href="#">Рачок (Черноморская креветка)</a></li>
+									<li><a href="#">Креветка</a></li>
+									<li><a href="#">Моллюски</a></li>
+								</ul>
+								<ul class="level-3 level-3-wide">
+									<li><a href="#">Слизняк</a></li>
+									<li><a href="#">Лягушка</a></li>
+									<li><a href="#">Головастик</a></li>
+									<li><a href="#">Мясо, шпик и птичьи потроха</a></li>
+									<li><a href="#">Щучья кишка</a></li>
+									<li><a href="#">Кожа рыбы</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Рыбий глаз</a></li>
+									<li><a href="#">Резка</a></li>
+									<li><a href="#">Пескоройка</a></li>
+									<li><a href="#">Малек (верховка)</a></li>
+									<li><a href="#">Живец</a></li>
+								</ul>
+							</div>
+                    	</div>
+                    	<div class="category cat-hide">
+                    		<a href="#" class="show-hide"></a>
+                    		<h3>Рыбы. Основы ихтиологии</h3>
+							<div class="rubric-nav rubric-nav-4">
+								<ul class="level-3">
+									<li><a href="#">Особенности рыб</a></li>
+									<li><a href="#">Поведение рыб</a></li>
+									<li><a href="#">Условия обитания</a></li>
+									<li><a href="#">Размножение</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Питание</a></li>
+									<li><a href="#">Возраст, рост, размеры</a></li>
+									<li><a href="#">Органы чувств</a></li>
+									<li><a href="#">Мускулатура рыб</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Пищеварительная система</a></li>
+									<li><a href="#">Скелет</a></li>
+									<li><a href="#">Органы дыхания</a></li>
+									<li><a href="#">Половая система</a></li>
+								</ul>
+								<ul class="level-3 level-3-last">
+									<li><a href="#">Кровеносная система</a></li>
+									<li><a href="#">Органы движения</a></li>
+									<li><a href="#">Болезни рыб</a></li>
+								</ul>
+							</div>
+                    	</div>
+                    	<div class="category cat-hide">
+                    		<a href="#" class="show-hide"></a>
+                    		<h3>Рыбы наших вод</h3>
+							<div class="rubric-nav rubric-nav-4">
+								<ul class="level-3">
+									<li><a href="#">Синец</a></li>
+									<li><a href="#">Белый амур</a></li>
+									<li><a href="#">Голавль</a></li>
+									<li><a href="#">Гольян</a></li>
+									<li><a href="#">Густера</a></li>
+									<li><a href="#">Ерш</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Жерех</a></li>
+									<li><a href="#">Карась</a></li>
+									<li><a href="#">Карп</a></li>
+									<li><a href="#">Красноперка</a></li>
+									<li><a href="#">Лещ</a></li>
+									<li><a href="#">Линь</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Налим</a></li>
+									<li><a href="#">Окунь</a></li>
+									<li><a href="#">Плотва</a></li>
+									<li><a href="#">Сом</a></li>
+									<li><a href="#">Судак</a></li>
+									<li><a href="#">Толстолобик</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Угорь</a></li>
+									<li><a href="#">Уклейка</a></li>
+									<li><a href="#">Чехонь</a></li>
+									<li><a href="#">Щука</a></li>
+									<li><a href="#">Язь</a></li>
+								</ul>
+							</div>
+                    	</div>
+                    	<div class="category cat-hide">
+                    		<a href="#" class="show-hide"></a>
+                    		<h3>Электроника в помощь рыболову</h3>
+							<div class="rubric-nav">
+								<ul class="level-1">
+									<li class="active">Эхолот</li>
+									<li><a href="#">GPS навигаторы и карты</a></li>
+								</ul>
+								<ul class="level-3 level-3-wide">
+									<li><a href="#">Эхолот Lowrance нового поколения (видео)</a></li>
+									<li><a href="#">Азбука эхолота</a></li>
+								</ul>
+							</div>
+                    	</div>
+                    	<div class="category cat-hide">
+                    		<a href="#" class="show-hide"></a>
+                    		<h3>Производители рыболовных товаров </h3>
+							<div class="rubric-nav rubric-nav-4">
+								<ul class="level-3">
+									<li><a href="#">Abu Garcia (Швеция)</a></li>
+									<li><a href="#">Balzer (Германия)</a></li>
+									<li><a href="#">Berkley (США)</a></li>
+									<li><a href="#">Blue Fox (Финляндия-США)</a></li>
+									<li><a href="#">Byron (Германия-Австрия)</a></li>
+									<li><a href="#">Cortland (США)</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Diamondback (США)</a></li>
+									<li><a href="#">Fenwick (США)</a></li>
+									<li><a href="#">Fuji (Япония)</a></li>
+									<li><a href="#">Garmin (США)</a></li>
+									<li><a href="#">Gibbs/Nortac (Канада)</a></li>
+									<li><a href="#">Halco (Австралия)</a></li>
+									<li><a href="#">Kuusamon Uistin Ltd. (Финляндия)</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Mepps (Франция-США)</a></li>
+									<li><a href="#">Metz (США)</a></li>
+									<li><a href="#">Mitchell (Франция-США)</a></li>
+									<li><a href="#">Orvis (США)</a></li>
+									<li><a href="#">Penn International (США)</a></li>
+									<li><a href="#">Rapala (Финляндия-США)</a></li>
+									<li><a href="#">Rio (США)</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Sage (США)</a></li>
+									<li><a href="#">Shimano (Япония)</a></li>
+									<li><a href="#">Tiemco (Япония)</a></li>
+									<li><a href="#">Maruto (Япония)</a></li>
+								</ul>
+							</div>
+                    	</div>
+                    	<div class="category cat-hide">
+                    		<a href="#" class="show-hide"></a>
+                    		<h3>F. Каталог сайтов</h3>
+							<div class="rubric-nav rubric-nav-4">
+								<ul class="level-3">
+									<li><a href="#">Информационно-развлекательные ресурсы</a></li>
+									<li><a href="#">Интернет-магазины</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Клубы и спортивные ассоциации</a></li>
+									<li><a href="#">СМИ</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Партнерские сайты</a></li>
+									<li><a href="#">Подать заявку на размещение в F. Каталоге</a></li>
+								</ul>
+							</div>
+                    	</div>
+                    	<div class="category cat-hide">
+                    		<a href="#" class="show-hide"></a>
+                    		<h3>Полезное</h3>
+							<div class="rubric-nav rubric-nav-4">
+								<ul class="level-3">
+									<li><a href="#">Расшифровка штрих-кодов на товарах</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Номерные знаки Украины</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Соответствия размеров одежды и обуви</a></li>
+								</ul>
+								<ul class="level-3">
+									<li><a href="#">Таблицы мер и весов</a></li>
+								</ul>
+							</div>
+                    	</div>
+                    </div>
+                </div>
+					
+			</div>
+            
+            <div class="sidebar">
+            
+                <div class="banner banner-80">
+                    <img src="images/content/banner_300_80.jpg" alt="" />
+                </div>
+                
+                <div class="banner banner-250">
+					<div class="banner-content">
+						<img src="images/content/banner_300_250.jpg" alt="" />
+					</div>
+                </div>
+                
+                <div class="news">
+                    <h2 class="heading"><span>Новости</span></h2>
+                    <ol class="news-list">
+                        <li>
+                            <div class="list-img"><a href="#"><img src="images/content/news_list_image.jpg" alt="" /></a></div>
+                            <h4><a href="#">В водах Сипадана (остров в Малайзии) стремительно растет количество рыбы.</a></h4>
+							<p>В надежде заманить cтальноголовую форель в горные реки Санта Моники, транспортное агентство Калифорнии планирует потратить $ 935 000 чтобы оградить часть пляжа грядой камней.</p>
+							<div class="summary">
+								<span class="date">28.04.2010</span>
+								<span class="comments-total"><strong>Комментариев:</strong> <a href="#">8</a></span>
+							</div>
+                        </li>
+						<li>
+                            <div class="list-img"><a href="#"><img src="images/content/news_list_image.jpg" alt="" /></a></div>
+                            <h4><a href="#">В водах Сипадана (остров в Малайзии) стремительно растет количество рыбы.</a></h4>
+							<p>В надежде заманить cтальноголовую форель в горные реки Санта Моники, транспортное агентство Калифорнии планирует потратить $ 935 000 чтобы оградить часть пляжа грядой камней.</p>
+							<div class="summary">
+								<span class="date">28.04.2010</span>
+								<span class="comments-total"><strong>Комментариев:</strong> <a href="#">8</a></span>
+							</div>
+                        </li>
+						<li class="last">
+                            <div class="list-img"><a href="#"><img src="images/content/news_list_image.jpg" alt="" /></a></div>
+                            <h4><a href="#">В водах Сипадана (остров в Малайзии) стремительно растет количество рыбы.</a></h4>
+							<p>В надежде заманить cтальноголовую форель в горные реки Санта Моники, транспортное агентство Калифорнии планирует потратить $ 935 000 чтобы оградить часть пляжа грядой камней.</p>
+							<div class="summary">
+								<span class="date">28.04.2010</span>
+								<span class="comments-total"><strong>Комментариев:</strong> <a href="#">8</a></span>
+							</div>
+                        </li>
+					</ol>
+                    <a href="#" class="more"><span>Все новости</span></a>
+                </div>
+                
+                <div class="banner banner-250">
+					<div class="banner-content">
+						<img src="images/content/banner_300_250.jpg" alt="" />
+					</div>
+                </div>
+                
+                <div class="bug">
+					<a href="#">Сообщить об ошибке</a>
+				</div>
+            
+            </div>
+			
+		</div>
+        
+    </div>
+    
+    <div class="footer">	
+		
+        <div class="wrap">
+            
+            <div class="nav">
+                <ul>
+                    <li class="home"><a href="#">На главную</a></li>
+                    <li><a href="#">Персональная часть</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">F. Новости</a></li>
+                    <li><a href="#">F. Сообщество</a></li>
+                    <li><a href="#">Энциклопедия рыбалки</a></li>
+                    <li><a href="#">F. Отчеты</a></li>
+                    <li><a href="#">F. Статистика</a></li>
+                    <li><a href="#">F. Рейтинги</a></li>
+                    <li><a href="#">F. Галерея</a></li>
+                    <li><a href="#">F. Форум</a></li>
+                </ul>
+            </div>
+            
+            <p class="design"><strong>Идея и разработка:</strong> F.GiDs &copy;. 2009-2010<br /><strong>Powered By:</strong> WEDay Studio.</p>
+            
+            <p class="contacts"><strong>E-mail:</strong> info@fgids.com<br /><strong>Тел.:</strong> +38 (044) 221-45-44</p>
+            
+            <p class="copyright">Все права защищены. При цитировании и использовании любых материалов гиперссылка на FGiDs.com обязательна. Републикация авторских материалов F.GiDs возможна только с письменного согласия F.GiDs. </p>
+            
+        </div>
+    
+    </div>
+    
+</body>
+
+</html>

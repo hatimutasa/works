@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>IPTV</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie.css" />
+	<![endif]-->
+	<script type="text/javascript" src="js/custom_forms.js"></script>
+	<script type="text/javascript" src="js/swfobject/src/swfobject.js"></script>
+    <script type="text/javascript">
+    swfobject.registerObject("video", "9.0.115", "expressInstall.swf");
+    </script>
+</head>
+<body>
+	<div class="container">
+        <div class="header">
+        	<div class="logo"><img src="images/logo.png" height="43" width="113" alt="" /></div>
+			<div class="user-section">
+				<h1>Добрый день, Сергей Бубликов!</h1>
+				<h2>Все подключенные услуги оплачены</h2>
+				<ul class="menu">
+					<li><span><a href="#">Прямые эфиры</a></span></li>
+					<li class="active"><span><a href="#">Записи программ</a></span></li>
+					<li><span><a href="#">Интересные события</a></span></li>
+				</ul>
+				<dl class="controls">
+					<dt>Управление:</dt>
+					<dd><span><a href="#">Услуги</a></span></dd>
+					<dd class="bullet"><span><a href="#">История платежей</a></span></dd>
+					<dd class="bullet"><span><a href="#">Смена пароля</a></span></dd>
+				</dl>
+				<input type="image" src="images/button_logout.png" />
+			</div>
+        </div>
+        <div class="video-wrap">
+			<div class="video">
+				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="video" width="100%" height="720">
+					<param name="movie" value="player/videotub.swf" />
+					<!--[if !IE]>-->
+					<object type="application/x-shockwave-flash" data="player/videotub.swf" width="100%" height="720">
+					<!--<![endif]-->
+					<p>Alternative content</p>
+					<!--[if !IE]>-->
+					</object>
+					<!--<![endif]-->
+				</object>
+			</div>
+		</div>
+        <div class="main">
+			<div class="filters">
+				<p>
+					<select name="country"><option>Все страны</option></select>
+					<select name="chanel"><option>Все каналы</option></select>
+					<select name="genre"><option>Все жанры</option></select>
+					<span class="airing">Дата эфира:<input type="text" name="airing" value="12.01.2010" /><span class="datepicker"><img src="images/datepicker.gif" height="8" width="17" alt="" /></span></span>
+					<span class="search"><input class="input" type="text" name="search" value="Название или описание" /><input type="image" src="images/button_show.png" alt="Показать" /></span>
+				</p>
+			</div>
+			<div class="records">
+				<ul>
+					<li>
+						<a href="#"><span class="mask"></span><img src="images/record_1.jpg" height="90" width="140" alt="" /></a>
+						<span class="currently-playing"><img src="images/record_playing.png" height="18" width="97" alt="проигрывается" /></span>
+						<h3><a href="#">Янукович<br />&mdash; президент</a></h3>
+						<p>Новостная программа, Пятый канал, Украина</p>
+						<span class="date">1 июня 2009</span>
+					</li>
+					<li>
+						<a href="#"><span class="mask"></span><img src="images/record_2.jpg" height="90" width="140" alt="" /></a>
+						<h3><a href="#">Обрушился памятник</a></h3>
+						<p>Новостная программа, Пятый канал, Украина</p>
+						<span class="date">1 июня 2009</span>
+					</li>
+					<li>
+						<a href="#"><span class="mask"></span><img src="images/record_3.jpg" height="90" width="140" alt="" /></a>
+						<h3><a href="#">Будущие губернаторы</a></h3>
+						<p>Новостная программа, Пятый канал, Украина</p>
+						<span class="date">1 июня 2009</span>
+					</li>
+					<li>
+						<a href="#"><span class="mask"></span><img src="images/record_4.jpg" height="90" width="140" alt="" /></a>
+						<h3><a href="#">Детальный<br />план инаугурации</a></h3>
+						<p>Новостная программа, Пятый канал, Украина</p>
+						<span class="date">1 июня 2009</span>
+					</li>
+					<li>
+						<a href="#"><span class="mask"></span><img src="images/record_5.jpg" height="90" width="140" alt="" /></a>
+						<h3><a href="#">Ванкувер-<br />2010</a></h3>
+						<p>Новостная программа, Пятый канал, Украина</p>
+						<span class="date">1 июня 2009</span>
+					</li>
+					<li>
+						<a href="#"><span class="mask"></span><img src="images/record_6.jpg" height="90" width="140" alt="" /></a>
+						<h3><a href="#">Тигипко назвал<br />имя</a></h3>
+						<p>Новостная программа, Пятый канал, Украина</p>
+						<span class="date">1 июня 2009</span>
+					</li>
+					<li>
+						<a href="#"><span class="mask"></span><img src="images/record_7.jpg" height="90" width="140" alt="" /></a>
+						<h3><a href="#">ЮАР перехватила корейское судно</a></h3>
+						<p>Новостная программа, Пятый канал, Украина</p>
+						<span class="date">1 июня 2009</span>
+					</li>
+					<li>
+						<a href="#"><span class="mask"></span><img src="images/record_8.jpg" height="90" width="140" alt="" /></a>
+						<h3><a href="#">Общенациональная забастовка</a></h3>
+						<p>Новостная программа, Пятый канал, Украина</p>
+						<span class="date">1 июня 2009</span>
+					</li>
+				</ul>
+			</div>
+        </div>
+    </div>
+    <div class="footer">&copy; 1997—2010 &laquo;<a href="#">IMB+</a>&raquo;</div>
+</body>
+</html>

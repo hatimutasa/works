@@ -1,0 +1,8 @@
+* { margin:0; padding:0; }
+html, body { background:#f3f3f3 !important; }
+.company-menu, .site-nav, .short-nav { display:none; }
+.container, .container .header { margin:0 auto; width:800px; }
+.header .logo { float:none; }
+.container h1, .content .about-blog-page h1, .content .about-blog h1 { margin:0 0 60px; }
+.text-column-1, .text-column-2, .text-column-3 { float:none; margin:0; width:auto; }
+.text-columns img, .container .tags, .comments-block, .comments-form, .footer, .delim { display:none; }

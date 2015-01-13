@@ -1,0 +1,864 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>fDiary</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	
+    <div class="container">
+    
+        <div class="top-banner"><img src="images/content/banner_730_90.jpg" alt="" /></div>
+        
+        <div class="header-links">
+            <dl class="services">
+                <dt><strong>F.Сервисы:</strong></dt>
+                <dd><a href="#">Проект 1</a></dd>
+                <dd><a href="#">Проект 2</a></dd>
+                <dd><a href="#">Проект 3</a></dd>
+                <dd><a href="#">Проект 4</a></dd>
+            </dl>
+            <ul class="links">
+            	<li><a href="#" class="twitter">Twitter</a></li>
+            	<li><a href="#" class="rss">Центр подписки</a></li>
+            </ul>
+        </div>
+        
+        <div class="header">
+            <a href="#" class="logo"><img src="images/fdiary_logo.png" alt="" /></a>
+            <div class="search">
+                <fieldset>
+                	<form action="" method="post">
+						<p class="search-box">
+							<input class="input" type="text" name="query" id="query" /><input type="image" src="images/btn_search.png" alt="Найти" />
+						</p>
+						<label for="search_rubric"><input type="radio" name="search_type" id="search_rubric" />По разделу</label>
+						<label for="search_site"><input type="radio" name="search_type" id="search_site" />По сайту</label>
+                    </form>
+                </fieldset>
+            </div>
+            <div class="login-form">
+                <fieldset>
+                    <form action="" method="post">
+                        <input type="text" class="input-text" name="username" id="username" />
+                        <input type="password" class="input-text" name="password" id="password" />
+                        <input type="image" class="input-img" src="images/btn_login.png" alt="Вход" />
+                        <p>
+                            <label for="remember"><input type="checkbox" name="remember" id="remember" />Запомнить</label>
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">Регистрация</a>
+                        </p>
+                    </form>
+                </fieldset>
+            </div>
+            <div class="widget"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active home"><a href="#">На главную</a></li>
+                <li><a href="#">Персональная часть</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">F. Новости</a></li>
+                <li><a href="#">F. Сообщество</a></li>
+                <li><a href="#">Энциклопедия рыбалки</a></li>
+                <li><a href="#">F. Отчеты</a></li>
+                <li><a href="#">F. Статистика</a></li>
+                <li><a href="#">F. Рейтинги</a></li>
+                <li><a href="#">F. Галерея</a></li>
+                <li><a href="#">F. Форум</a></li>
+            </ul>
+        </div>
+        
+        <div class="wrap">
+
+			<div class="forum">
+			
+				<div class="forum-menu">
+					<ul class="actions">
+						<li class="add_news"><a href="#">Добавить новость</a></li>
+						<li class="add_article"><a href="#">Добавить статью</a></li>
+						<li class="add_report"><a href="#">Добавить отчет</a></li>
+						<li class="print"><a href="#">Версия для печати</a></li>
+						<li class="share"><a href="#">Отправить другу</a></li>
+					</ul>
+					<div class="font-size">
+						<strong>Размер<br />шрифта</strong>
+						<span class="holder active"><small class="small">A</small></span>
+						<span class="holder"><span>A</span></span>
+						<span class="holder"><big class="big">A</big></span>
+					</div>
+				</div>
+				
+				<div class="navbar">
+					<div class="navigation">Главная / <a href="#">F.Форум</a></div>
+					Добро пожаловать, Гость. Для участия в обсуждениях Вам необходимо <a href="#">Авторизоваться</a>
+				</div>
+
+                <div class="forum-topics">
+                    <table class="forum-table">
+                    <tbody>
+                    <tr class="forum-headers">
+                        <td>
+                        </td>
+                        <td style="padding: 0px;">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <h2>F. Клуб</h2>
+                                </td>
+                                <td width="20" >
+                                    <img onclick="ShowForums(0,11,5)" style="cursor: pointer; display: none;" alt="Раскрыть" src="hostcmsfiles/forum/down.gif" id="down_11"/> <img onclick="ShowForums(1,11,5)" style="cursor: pointer;" alt="Скрыть" src="hostcmsfiles/forum/up.gif" id="up_11" />
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                        <td width="40" align="center">
+                            <h2>Тем</h2>
+                        </td>
+                        <td width="80" align="center">
+                            <h2>Сообщений</h2>
+                        </td>
+                        <td width="145" align="center">
+                            <h2>Последнее сообщение</h2>
+                        </td>
+                    </tr>
+                    <tr id="r11_1">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/11/">Подсекай вместе с F.GIDs</a><br />
+                            (события, встречи,акции,конкурсы)
+                        </td>
+                        <td width="40" align="center">
+                            16
+                        </td>
+                        <td width="80" align="center">
+                            773
+                        </td>
+                        <td class="date">
+                            <p>
+                                15.07.2010 11:59:37
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/11/325/page-1/#last_message">megas</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r11_2">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/12/">Вместе мы - сила</a><br />
+                            (социальные проекты, благотворительная деятельность)
+                        </td>
+                        <td width="40" align="center">
+                            7
+                        </td>
+                        <td width="80" align="center">
+                            108
+                        </td>
+                        <td class="date">
+                            <p>
+                                06.07.2010 13:02:04
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/12/332/page-1/#last_message">Ptah</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r11_3">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/35/">Поздравления</a><br />
+                            (поздравления одноклубников с днями рождения и праздниками)
+                        </td>
+                        <td width="40" align="center">
+                            5
+                        </td>
+                        <td width="80" align="center">
+                            143
+                        </td>
+                        <td class="date">
+                            <p>
+                                09.07.2010 15:59:23
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/35/288/page-5/#last_message">Beer</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r11_4">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/13/">F. Команда</a><br />
+                            (соревнования)
+                        </td>
+                        <td width="40" align="center">
+                            1
+                        </td>
+                        <td width="80" align="center">
+                            14
+                        </td>
+                        <td class="date">
+                            <p>
+                                17.09.2009 12:07:49
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/13/55/page-1/#last_message">Nils</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r11_5">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/27/">F. Справочник (Энциклопедия рыбалки)</a><br />
+                            Вместе создаем живую книгу о рыбалке
+                        </td>
+                        <td width="40" align="center">
+                            9
+                        </td>
+                        <td width="80" align="center">
+                            192
+                        </td>
+                        <td class="date">
+                            <p>
+                                18.06.2010 11:00:35
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/27/122/page-2/#last_message">Sasha</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="forum-headers">
+                        <td>
+                        </td>
+                        <td style="padding: 0px;">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <h2>Рыболов Рыболову....</h2>
+                                </td>
+                                <td width="20" >
+                                    <img onclick="ShowForums(0,12,10)" style="cursor: pointer; display: none;" alt="Раскрыть" src="hostcmsfiles/forum/down.gif" id="down_12" /><img onclick="ShowForums(1,12,10)" style="cursor: pointer;" alt="Скрыть" src="hostcmsfiles/forum/up.gif" id="up_12" />
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                        <td width="40" align="center">
+                            <h2>Тем</h2>
+                        </td>
+                        <td width="80" align="center">
+                            <h2>Сообщений</h2>
+                        </td>
+                        <td width="145" align="center">
+                            <h2>Последнее сообщение</h2>
+                        </td>
+                    </tr>
+                    <tr id="r12_1">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/14/">F.Diary Дайджест</a><br />
+                            (обсуждение Ленты новостей на сайте + свои новости)
+                        </td>
+                        <td width="40" align="center">
+                            28
+                        </td>
+                        <td width="80" align="center">
+                            217
+                        </td>
+                        <td class="date">
+                            <p>
+                                05.07.2010 18:25:43
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/14/342/page-2/#last_message">Nils</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r12_2">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/15/">Приглашу на рыбалку</a><br />
+                            Ищу напарника
+                        </td>
+                        <td width="40" align="center">
+                            37
+                        </td>
+                        <td width="80" align="center">
+                            1268
+                        </td>
+                        <td class="date">
+                            <p>
+                                16.07.2010 11:13:09
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/15/352/page-3/#last_message">megas</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r12_3">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/16/">Что? На что? Когда?</a><br />
+                            (Статистика на проекте, собственные наблюдения, обсуждение отчётов, повадки рыбы)
+                        </td>
+                        <td width="40" align="center">
+                            23
+                        </td>
+                        <td width="80" align="center">
+                            732
+                        </td>
+                        <td class="date">
+                            <p>
+                                06.07.2010 14:39:55
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/16/69/page-2/#last_message">Nils</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r12_4">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/17/">Мой Тубус</a><br />
+                            (обсуждение удилищ и всего связанного с ними)
+                        </td>
+                        <td width="40" align="center">
+                            7
+                        </td>
+                        <td width="80" align="center">
+                            254
+                        </td>
+                        <td class="date">
+                            <p>
+                                21.06.2010 21:39:38
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/17/316/page-1/#last_message">jcars</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r12_5">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/18/">Мой Кофр</a><br />
+                            (Катушки и всё, что с ними связано)
+                        </td>
+                        <td width="40" align="center">
+                            6
+                        </td>
+                        <td width="80" align="center">
+                            182
+                        </td>
+                        <td class="date">
+                            <p>
+                                17.06.2010 10:44:50
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/18/322/page-1/#last_message">Almor</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r12_6">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/19/">Моя снасть</a><br />
+                            (Лески, крючки, поплавки и другие составляющие снасти)
+                        </td>
+                        <td width="40" align="center">
+                            7
+                        </td>
+                        <td width="80" align="center">
+                            232
+                        </td>
+                        <td class="date">
+                            <p>
+                                01.07.2010 14:24:56
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/19/108/page-4/#last_message">Almor</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r12_7">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/20/">Мой рыболовный ящик</a><br />
+                            (Искусственные приманки, насадки, прикормки, аттрактанты и т.д.)
+                        </td>
+                        <td width="40" align="center">
+                            20
+                        </td>
+                        <td width="80" align="center">
+                            450
+                        </td>
+                        <td class="date">
+                            <p>
+                                13.07.2010 21:02:50
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/20/351/page-1/#last_message">Nils</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r12_8">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/21/">Мой рюкзак</a><br />
+                            (обсуждение всего остального, что используется на рыбалке)
+                        </td>
+                        <td width="40" align="center">
+                            6
+                        </td>
+                        <td width="80" align="center">
+                            175
+                        </td>
+                        <td class="date">
+                            <p>
+                                16.06.2010 22:18:16
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/21/223/page-3/#last_message">Ptah</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r12_9">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/33/">Моя электроника</a><br />
+                            (обсуждение эхолотов, GPS навигаторов, сигнализаторов, коммуникаторов, раций и другой электроники, которую используют на рыбалке.
+                        </td>
+                        <td width="40" align="center">
+                            3
+                        </td>
+                        <td width="80" align="center">
+                            59
+                        </td>
+                        <td class="date">
+                            <p>
+                                31.05.2010 12:39:06
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/33/303/page-1/#last_message">Ptah</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r12_10">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/22/">На плаву</a><br />
+                            (лодки, моторы и т.д.)
+                        </td>
+                        <td width="40" align="center">
+                            17
+                        </td>
+                        <td width="80" align="center">
+                            534
+                        </td>
+                        <td class="date">
+                            <p>
+                                23.06.2010 13:03:34
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/22/337/page-2/#last_message">Almor</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="forum-headers">
+                        <td>
+                        </td>
+                        <td style="padding: 0px;">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <h2>Ловим...ловим...ловим...</h2>
+                                </td>
+                                <td width="20" >
+                                    <img onclick="ShowForums(0,17,2)" style="cursor: pointer; display: none;" alt="Раскрыть" src="hostcmsfiles/forum/down.gif" id="down_17" /><img onclick="ShowForums(1,17,2)" style="cursor: pointer;" alt="Скрыть" src="hostcmsfiles/forum/up.gif" id="up_17" />
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                        <td width="40" align="center">
+                            <h2>Тем</h2>
+                        </td>
+                        <td width="80" align="center">
+                            <h2>Сообщений</h2>
+                        </td>
+                        <td width="145" align="center">
+                            <h2>Последнее сообщение</h2>
+                        </td>
+                    </tr>
+                    <tr id="r17_1">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/30/">Фидерная ловля</a><br />
+                            (Ловля мирной рыбы фидером/пикером, другими донными снастями)
+                        </td>
+                        <td width="40" align="center">
+                            6
+                        </td>
+                        <td width="80" align="center">
+                            218
+                        </td>
+                        <td class="date">
+                            <p>
+                                06.07.2010 12:46:50
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/30/300/page-4/#last_message">Almor</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r17_2">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/32/">Зимняя рыбалка</a><br />
+                            (Ловля рыбы со льда. Снасти методы и т.д.)
+                        </td>
+                        <td width="40" align="center">
+                            12
+                        </td>
+                        <td width="80" align="center">
+                            298
+                        </td>
+                        <td class="date">
+                            <p>
+                                12.06.2010 11:26:31
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/32/243/page-1/#last_message">serignatev</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="forum-headers">
+                        <td>
+                        </td>
+                        <td style="padding: 0px;">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <h2>Бухара</h2>
+                                    (Купля-продажа)
+                                </td>
+                                <td width="20" >
+                                    <img onclick="ShowForums(0,13,2)" style="cursor: pointer; display: none;" alt="Раскрыть" src="hostcmsfiles/forum/down.gif" id="down_13" /><img onclick="ShowForums(1,13,2)" style="cursor: pointer;" alt="Скрыть" src="hostcmsfiles/forum/up.gif" id="up_13" />
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                        <td width="40" align="center">
+                            <h2>Тем</h2>
+                        </td>
+                        <td width="80" align="center">
+                            <h2>Сообщений</h2>
+                        </td>
+                        <td width="145" align="center">
+                            <h2>Последнее сообщение</h2>
+                        </td>
+                    </tr>
+                    <tr id="r13_1">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/23/">Куплю</a><br />
+                        </td>
+                        <td width="40" align="center">
+                            8
+                        </td>
+                        <td width="80" align="center">
+                            40
+                        </td>
+                        <td class="date">
+                            <p>
+                                31.05.2010 15:43:11
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/23/318/page-1/#last_message">Nils</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r13_2">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/24/">Продам</a><br />
+                        </td>
+                        <td width="40" align="center">
+                            35
+                        </td>
+                        <td width="80" align="center">
+                            225
+                        </td>
+                        <td class="date">
+                            <p>
+                                16.07.2010 14:59:31
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/24/353/page-1/#last_message">DIS</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="forum-headers">
+                        <td>
+                        </td>
+                        <td style="padding: 0px;">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <h2>А поговорить?</h2>
+                                </td>
+                                <td width="20" >
+                                    <img onclick="ShowForums(0,14,1)" style="cursor: pointer; display: none;" alt="Раскрыть" src="hostcmsfiles/forum/down.gif" id="down_14" /><img onclick="ShowForums(1,14,1)" style="cursor: pointer;" alt="Скрыть" src="hostcmsfiles/forum/up.gif" id="up_14" />
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                        <td width="40" align="center">
+                            <h2>Тем</h2>
+                        </td>
+                        <td width="80" align="center">
+                            <h2>Сообщений</h2>
+                        </td>
+                        <td width="145" align="center">
+                            <h2>Последнее сообщение</h2>
+                        </td>
+                    </tr>
+                    <tr id="r14_1">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/25/">Говорим об о всем</a><br />
+                            Обсуждение любых тем не связанных с клубом
+                        </td>
+                        <td width="40" align="center">
+                            50
+                        </td>
+                        <td width="80" align="center">
+                            746
+                        </td>
+                        <td class="date">
+                            <p>
+                                15.07.2010 17:41:40
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/25/36/page-5/#last_message">megas</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="forum-headers">
+                        <td>
+                        </td>
+                        <td style="padding: 0px;">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <h2>Вопросы и Предложения</h2>
+                                </td>
+                                <td width="20" >
+                                    <img onclick="ShowForums(0,15,2)" style="cursor: pointer; display: none;" alt="Раскрыть" src="hostcmsfiles/forum/down.gif" id="down_15" /><img onclick="ShowForums(1,15,2)" style="cursor: pointer;" alt="Скрыть" src="hostcmsfiles/forum/up.gif" id="up_15" />
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                        <td width="40" align="center">
+                            <h2>Тем</h2>
+                        </td>
+                        <td width="80" align="center">
+                            <h2>Сообщений</h2>
+                        </td>
+                        <td width="145" align="center">
+                            <h2>Последнее сообщение</h2>
+                        </td>
+                    </tr>
+                    <tr id="r15_1">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/26/">Книга Отзывов и Предложений</a><br />
+                        </td>
+                        <td width="40" align="center">
+                            7
+                        </td>
+                        <td width="80" align="center">
+                            227
+                        </td>
+                        <td class="date">
+                            <p>
+                                28.05.2010 16:02:03
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/26/140/page-2/#last_message">megas</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="r15_2">
+                        <td width="40" align="center">
+                            <img alt="O+" title="Открытый форум с новыми сообщениями" src="hostcmsfiles/forum/forum_new.gif" />
+                        </td>
+                        <td>
+                            <a href="/forum/28/">FAQ по работе с ресурсом</a><br />
+                            Часто задаваемые вопросы по работе с FDiary
+                        </td>
+                        <td width="40" align="center">
+                            7
+                        </td>
+                        <td width="80" align="center">
+                            21
+                        </td>
+                        <td class="date">
+                            <p>
+                                26.05.2010 14:59:43
+                            </p>
+                            <p>
+                                <a class="lastmessage" href="/forum/28/39/page-1/#last_message">megas</a>
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <div class="forum-footer">
+                    <div class="forum-menu">
+                        <ul>
+                            <li><a href="#">Все мои сообщения на F. Форуме</a></li>
+                            <li><a href="#">Сделать все темы прочитаными</a></li>
+                            <li><a href="#">Последние сообщения</a></li>
+                            <li><a href="#">Правила Форума</a></li>
+                            <li><a href="#">Часто задаваемые вопросы (FAQ)</a></li>
+                        </ul>
+                    </div>
+                    <div class="forum-stats">
+                        <div class="left">
+                            <p><strong>В последний раз вы тут были:</strong> 26.05.2010 14:38:59</p>
+                            <p><strong>Активных пользователей за последние 24 часа:</strong> 117</p>
+                            <p><strong>Из них:</strong> 28 зарегистрированных, 89 гостей</p>
+                            <p><strong>Зарегистрированные пользователи:</strong> <a href="#"></a>
+                                <a href="#">alex409</a>
+                                <a href="#">my4a4o</a>
+                                <a href="#">serg</a>
+                                <a href="#">LETNIISON</a>
+                                <a href="#">McFrost</a>
+                                <a href="#">lelok</a>
+                                <a href="#">mot</a>
+                                <a href="#">Albert</a>
+                                <a href="#">digitalrie</a>
+                                <a href="#">bsn</a>
+                                <a href="#">Nils</a>
+                                <a href="#">SanyoK</a>
+                                <a href="#">McTaker</a>
+                                <a href="#">logger</a>
+                                <a href="#">nester</a>
+                                <a href="#">serignatev</a>
+                                <a href="#">aisho</a>
+                                <a href="#">jcars</a>
+                                <a href="#">DIS</a>
+                                <a href="#">Sasha</a>
+                                <a href="#">minerVit</a>
+                                <a href="#">Gymbert</a>
+                                <a href="#">megas</a>
+                                <a href="#">Murzik</a>
+                                <a href="#">Viktorovich</a>
+                                <a href="#">begemosha</a>
+                                <a href="#">Porter</a>
+                                <a href="#">artemisua</a>
+                            </p>
+                        </div>
+                        <div class="right">
+                            <p><strong>Именинники сегодня:</strong> <a href="#">Homer Simpson123</a></p>
+                            <p><strong>Всего сообщений на форуме:</strong> 6328</p>
+                            <p><strong>Всего зарегистрированных пользователей:</strong> 283</p>
+                            <div class="bug">
+                                <a href="#">Сообщить об ошибке</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="footer">	
+		
+        <div class="wrap">
+            
+            <div class="nav">
+                <ul>
+                    <li class="home"><a href="#">На главную</a></li>
+                    <li><a href="#">Персональная часть</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">F. Новости</a></li>
+                    <li><a href="#">F. Сообщество</a></li>
+                    <li><a href="#">Энциклопедия рыбалки</a></li>
+                    <li><a href="#">F. Отчеты</a></li>
+                    <li><a href="#">F. Статистика</a></li>
+                    <li><a href="#">F. Рейтинги</a></li>
+                    <li><a href="#">F. Галерея</a></li>
+                    <li><a href="#">F. Форум</a></li>
+                </ul>
+            </div>
+            
+            <p class="design"><strong>Идея и разработка:</strong> F.GiDs &copy;. 2009-2010<br /><strong>Powered By:</strong> WEDay Studio.</p>
+            
+            <p class="contacts"><strong>E-mail:</strong> info@fgids.com<br /><strong>Тел.:</strong> +38 (044) 221-45-44</p>
+            
+            <p class="copyright">Все права защищены. При цитировании и использовании любых материалов гиперссылка на FGiDs.com обязательна. Републикация авторских материалов F.GiDs возможна только с письменного согласия F.GiDs. </p>
+            
+        </div>
+    
+    </div>
+    
+</body>
+
+</html>

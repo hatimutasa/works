@@ -1,0 +1,906 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   jCarousel
+   ========================================================================== */
+
+.gallery {
+    position: relative;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-vertical ul {
+    width: 100%;
+    height: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-pagination a.active {
+    background: #db5012;
+    color: #db5012;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'PFDinTextCondPro';
+    font-weight: bold;
+    src: url('../fonts/pfdintextcondpro-bold.eot');
+    src: url('../fonts/pfdintextcondpro-bold.eot') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro-bold.woff') format('woff'),
+         url('../fonts/pfdintextcondpro-bold.ttf') format('truetype'),
+         url('../fonts/pfdintextcondpro-bold.svg#PFDinTextCondProBold') format('svg');
+}
+
+@font-face {
+    font-family: 'PFDinTextCondPro';
+    font-weight: lighter;
+    src: url('../fonts/pfdintextcondpro-light.eot');
+    src: url('../fonts/pfdintextcondpro-light.eot') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro-light.woff') format('woff'),
+         url('../fonts/pfdintextcondpro-light.ttf') format('truetype'),
+         url('../fonts/pfdintextcondpro-light.svg#PFDinTextCondProLight') format('svg');
+}
+
+@font-face {
+    font-family: 'PFDinTextCondPro';
+    font-weight: normal;
+    src: url('../fonts/pfdintextcondpro-regular.eot');
+    src: url('../fonts/pfdintextcondpro-regular.eot') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro-regular.woff') format('woff'),
+         url('../fonts/pfdintextcondpro-regular.ttf') format('truetype'),
+         url('../fonts/pfdintextcondpro-regular.svg#PFDinTextCondProRegular') format('svg');
+}
+
+body {
+    background: url(../img/bg.jpg) no-repeat fixed;
+    font-family: 'PFDinTextCondPro';
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 25px 60px;
+    width: 964px;
+}
+
+.homepage-gallery {
+    background: #030303;
+    height: 345px;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+    color: #fff;
+    position: relative;
+    height: 200px;
+}
+    .lang {
+        border: 1px solid #fff;
+        position: absolute;
+        top: 12px;
+        left: 0;
+        list-style: none;
+        margin: 0;
+        position: relative;
+        padding: 2px 2px 0;
+        width: 33px;
+    }
+        .lang:after {
+            background: url(../img/i_arrow.png) no-repeat;
+            content: '';
+            display: block;
+            position: absolute;
+            top: 7px;
+            right: 4px;
+            height: 4px;
+            width: 7px;
+            z-index: -1;
+
+        }
+        .lang a {
+            display: block;
+            background: url(../img/i_lang.png) no-repeat 0 0;
+            text-indent: 100%;
+            margin: 0 15px 2px 0;
+            padding: 12px 15px 0 0;
+            overflow: hidden;
+            height: 0;
+            width: 16px;
+        }
+            .lang .lang-ru {
+                background-position: 0 -12px;
+            }
+
+        .lang.show a {
+            display: block !important;
+        }
+    .logo {
+        background: url(../img/logo.png) no-repeat 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: 54px;
+        width: 186px;
+    }
+
+    .nav {
+        position: absolute;
+        top: 150px;
+        left: 0;
+    }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+            .nav li {
+                display: inline-block;
+                margin-right: 12px;
+            }
+                .nav a  {
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 18px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                .nav .active {
+                    color: #dd5314;
+                }
+
+    .contact {
+        position: absolute;
+        top: 120px;
+        right: 95px;
+    }
+        .contact .tel {
+            color: #fff;
+            display: block;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 1;
+            letter-spacing: -0.1ex;
+        }
+        .contact a[href^=tel]{
+            color:inherit;
+            text-decoration:none;
+        }
+        .contact .working-hours {
+            margin-right: 10px;
+            font-size: 19px;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        .contact .skype {
+            color: #fff;
+            font-size: 13.6px;
+            line-height: 19px;
+            text-decoration: none;
+        }
+            .contact .skype span,
+            .contact .skype img {
+                vertical-align: middle;
+            }
+
+    .cart {
+        background: url(../img/bg_cart.png) no-repeat;
+        position: absolute;
+        right: 0;
+        top: 110px;
+        height: 70px;
+        width: 70px;
+    }
+
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+.homepage-banner {
+    color: #fff;
+    padding: 10px 0 35px;
+}
+    .homepage-banner h1 {
+        color: #e05717;
+        font-size: 52px;
+        font-weight: lighter;
+        line-height: 1;
+        margin: 0;
+    }
+    .homepage-banner strong {
+        color: #fff;
+        font-size: 93px;
+        font-weight: lighter;
+        line-height: 1;
+    }
+        .homepage-banner strong span {
+            color: #e05717;
+        }
+
+/* ==========================================================================
+   Drova
+   ========================================================================== */
+
+.gallery-rounded-top {
+    -webkit-border-radius: 15px 15px 0 0;
+            border-radius: 15px 15px 0 0;
+}
+    .gallery-rounded-top img {
+        -webkit-border-radius: 15px 15px 0 0;
+                border-radius: 15px 15px 0 0;
+    }
+
+.woods {
+
+}
+    .wood {
+        background: #fff;
+        overflow: hidden;
+        position: relative;
+    }
+        .btn {
+            color: #fff;
+            background: #db5012;
+            -webkit-border-radius: 15px;
+                    border-radius: 15px;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1;
+            padding: 7px 20px 7px;
+            text-decoration: none;
+        }
+        .wood-img {
+            float: left;
+            width: 283px;
+        }
+        .wood-config {
+            font-size: 15px;
+            float: left;
+            height: 314px;
+            padding: 37px;
+            width: 347px;
+        }
+            .wood-config h1 {
+                color: #000;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 1;
+                margin: 5px 0 24px;
+            }
+            .wood-config h1 + strong {
+                color: #db5012;
+                display: block;
+                margin: -20px 0 5px;
+                text-align: center;
+            }
+            .wood-config table {
+                font-size: 15px;
+                line-height: 1;
+                border: 1px solid #000;
+                border-collapse: collapse;
+            }
+                .wood-config th,
+                .wood-config td {
+                    border: 1px solid #000;
+                    font-weight: lighter;
+                    text-align: left;
+                    padding: 7px 9px 6px;
+                }
+                    .wood-config .value {
+                        cursor: pointer;
+                        display: block;
+                        margin: -7px -9px -6px;
+                        padding: 7px 9px 6px;
+                    }
+                    .wood-config .selected {
+                        background: #db5012;
+                    }
+                    .wood-config .price {
+                        color: #dd5214;
+                        font-weight: bold;
+                    }
+        .wood-order {
+            display: none;
+            padding: 37px 37px 37px 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 223px;
+        }
+            .wood-order h2 {
+                color: #000;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 1;
+                margin: 5px 0 24px;
+            }
+            .wood-order .field {
+                background: #fff;
+                border: solid #000;
+                border-width: 1px 1px 0;
+                display: table;
+                width: 100%;
+            }
+            .wood-order .field.last {
+                border-bottom: 1px solid #000;
+                margin: 0 0 20px;
+            }
+            .wood-order .label,
+            .wood-order .control {
+                display: table-cell;
+                padding: 5px 0 2px;
+                vertical-align: bottom;
+            }
+            .wood-order .label {
+                padding: 5px 2px 2px 8px;
+                width: 1%;
+            }
+                .wood-order .label label {
+                    cursor: pointer;
+                    font-size: 14px;
+                    line-height: 1;
+                    white-space: nowrap;
+                }
+                .wood-order .control input[type="text"] {
+                    background: #fff;
+                    border: none;
+                    outline-style: none;
+                    font-family: 'PFDinTextCondPro';
+                    font-size: 14px;
+                    line-height: 1;
+                    padding: 0;
+                    width: 90%;
+                }
+                .wood-order .control label {
+                    cursor: pointer;
+                    font-size: 14px;
+                    line-height: 1;
+                    margin-left: 20px;
+                }
+                .wood-order .control input[type="radio"] {
+                    position: absolute;
+                    visibility: hidden;
+                }
+                .wood-order .control input[type="radio"]:checked +label {
+                    text-decoration: underline;
+                }
+                .validation-failed {
+                    margin: -7px 0 7px;
+                    padding-left: 20px;
+                }
+                .validation-price-failed {
+                    color: #dd5214;
+                    margin: -7px 0 5px;
+                }
+
+        .wood-banner {
+            float: left;
+            width: 260px;
+        }
+
+    .wood-1 .wood-config,
+    .wood-1 .wood-order {
+        background: #F2D6BA;
+    }
+
+    .wood-2 .wood-config,
+    .wood-2 .wood-order {
+        background: #eeecec;
+    }
+
+    .wood-3 .wood-config,
+    .wood-3 .wood-order {
+        background: #fff;
+    }
+
+/* ==========================================================================
+   Pack
+   ========================================================================== */
+
+.pack {
+    background: #FFF;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    font-size: 16px;
+    padding: 55px 75px;
+}
+    .pack h1 {
+        margin: 0;
+    }
+    .pack h1,
+    .pack h2 {
+        font-size: 30px;
+        font-weight: normal;
+    }
+    .pack h2,
+    .pack .note {
+        margin: 35px 0;
+    }
+    .pack .note {
+        font-style: italic;
+    }
+        .pack .note span {
+            color: #dd5313;
+        }
+    .pack .right {
+        margin: 20px 0 0 100px;
+    }
+
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+
+.gallery dl {
+    position: relative;
+    margin: 0;
+}
+    .gallery dt {
+        color: #fff;
+        cursor: pointer;
+        -webkit-border-radius: 15px 15px 0 0;
+                border-radius: 15px 15px 0 0;
+        font-size: 18px;
+        line-height: 32px;
+        float: left;
+        height: 32px;
+        padding: 4px 30px 0;
+    }
+    .gallery dt.selected {
+        background: #e05716;
+    }
+    .gallery dd {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+        color: #eee2cf;
+        font-size: 16px;
+        float: right;
+        display: none;
+        min-height: 130px;
+        margin: 0;
+        padding: 30px 60px;
+        width: 100%;
+    }
+    .gallery dd.selected {
+        background: #5A5A5A;
+        background: rgba(90, 90, 90, .8);
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 572px;
+    }
+    .jcarousel-left {
+        float: left;
+        height: 536px;
+        width: 433px;
+    }
+    .jcarousel-right {
+        float: left;
+        width: 530px;
+    }
+
+    .gallerys {
+        margin: 0 0 160px;
+    }
+
+/* ==========================================================================
+   Contacts
+   ========================================================================== */
+
+.contacts {}
+    .contacts h1,
+    .contacts h2 {
+        color: #e25e1f;
+        font-size: 16px;
+        margin: 0 0 25px;
+    }
+    .contacts .left {
+        float: left;
+        width: 220px;
+    }
+    .contacts .map {
+        display: table;
+        overflow: hidden;
+    }
+    .contacts dl {
+        color: #fff;
+        font-size: 16px;
+    }
+        .contacts dt {
+            font-weight: bold;
+            margin: 0 0 3px;
+        }
+        .contacts dd {
+            margin: 0 0 30px;
+            padding: 0;
+        }
+            .contacts dd a {
+                color: #fff;
+            }
+            .contacts dd img {
+                margin-right: 2px;
+                vertical-align: middle;
+            }
+    .contacts .map {}
+        .contacts .map-wrapper {
+            height: 370px;
+        }
+        .contacts .map p {
+            color: #fff;
+            font-size: 18px;
+            background: #E25E1F;
+            margin: 0;
+            padding: 40px 50px;
+        }
+
+/* ==========================================================================
+   humidity
+   ========================================================================== */
+
+.humidity {
+    background: #FFF;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    font-size: 16px;
+    padding: 75px;
+}
+    .humidity h1 {
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 1;
+        margin: 0;
+    }
+    .humidity p {
+        line-height: 22px;
+    }
+    .humidity .note {
+        color: #e15918;
+        font-size: 27px;
+        font-weight: lighter;
+        font-style: italic;
+        line-height: 1;
+        margin: 5px 0 30px;
+    }
+    .humidity .right {
+        color: #fff;
+        clear: right;
+        background: #E15C1D;
+        float: right;
+        margin: 0 0 0 45px;
+        padding: 45px;
+        width: 310px;
+    }
+    .humidity .right + .right {
+        background: #7f7f7f;
+    }
+        .humidity .right strong {
+            font-size: 22px;
+            font-weight: normal;
+        }
+    .humidity .graph {
+        margin: 40px 0;
+    }
+    .humidity .graph + .note {
+        color: #e15c1d;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 22px;
+    }
+
+    .levels {
+        margin: 100px 0 0;
+    }
+        .levels > div {
+            margin: 0 0 20px;
+        }
+        .levels span {
+            display: inline-block;
+            font-size: 100px;
+            font-weight: lighter;
+            font-style: italic;
+            line-height: 1;
+            vertical-align: top;
+        }
+        .level {
+            display: inline-block;
+            background: url(../img/bg_wood.png) repeat-x 0 0;
+            height: 85px;
+            vertical-align: top;
+        }
+            .level-50 .level {
+                width: 655px;
+            }
+            .level-35 .level {
+                width: 570px;
+            }
+            .level-35 span {
+                color: #e15c1d;
+            }
+            .level-20 .level {
+                width: 475px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.right {
+    float: right;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,6 @@
+body { background:#fff; color:#000; font-family:"Times New Roman", Times, serif; font-size:95%; }
+.headmenu-nav, .headmenu-site, .header-sidebar, .right-column, .partners, .partners img, .print, .back { display:none; }
+.header, .logo { height:47px; }
+.text { padding-bottom:0; }
+.logo { padding:0 0 20px 102px; width:48px; }
+.footer { padding-top:40px; }

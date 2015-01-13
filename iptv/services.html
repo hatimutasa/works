@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>IPTV</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie.css" />
+	<![endif]-->
+	<script type="text/javascript" src="js/custom_forms.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div class="header">
+        	<div class="logo"><img src="images/logo.png" height="43" width="113" alt="" /></div>
+			<div class="user-section">
+				<h1>Добрый день, Сергей Бубликов!</h1>
+				<h2><a href="#" class="alert">требуется оплата одной из услуг</a></h2>
+				<ul class="menu">
+					<li><span><a href="#">Прямые эфиры</a></span></li>
+					<li class="active"><span><a href="#">Записи программ</a></span></li>
+					<li><span><a href="#">Интересные события</a></span></li>
+				</ul>
+				<dl class="controls">
+					<dt>Управление:</dt>
+					<dd class="active"><span><a href="#">Услуги</a></span></dd>
+					<dd><span><a href="#">История платежей</a></span></dd>
+					<dd class="bullet"><span><a href="#">Смена пароля</a></span></dd>
+				</dl>
+				<input type="image" src="images/button_logout.png" />
+			</div>
+        </div>
+		<div class="services-wrap">
+			<h1 class="services-heading">Подключенные услуги</h1>
+			<dl class="services">
+				<dt class="service-onlinetv"><strong>Онлайн телевидение</strong>Подключена с 1 февраля 2010 года</dt>
+				<dd class="service-info">Ваша подписка активна до <strong>21.03.10</strong>, необходимо совершить следующий платёж</dd>
+				<dd class="service-action"><a href="#" class="prolong prolong-expired">Продлить</a></dd>
+			</dl>
+			<dl class="services">
+				<dt class="service-iptv"><strong>Сервис IPTV</strong>Подключена с 1 февраля 2010 года</dt>
+				<dd class="service-info">Ваша подписка активна до <strong>01.05.10</strong>, необходимо совершить следующий платёж</dd>
+				<dd class="service-action"><a href="#" class="change-plan">cменить тарифный план</a><a href="#" class="prolong">Продлить</a></dd>
+			</dl>
+			<dl class="services">
+				<dt class="service-internet"><strong>Доступ в интернет<sup><a href="#">Статистика</a></sup></strong>Подключена с 1 февраля 2010 года, тарифный план "Неограниченный"</dt>
+				<dd class="service-info">Ваша подписка активна до <strong>21.03.10</strong>, необходимо совершить следующий платёж</dd>
+				<dd class="service-action"><a href="#" class="change-plan">cменить тарифный план</a><a href="#" class="prolong prolong-active">Продлить</a></dd>
+			</dl>
+			<div class="prolong-service-wrap">
+				<div class="prolong-service">
+					<form action="" method="post">
+						<fieldset>
+							<dl class="first">
+								<dt><label>Срок продления</label></dt>
+								<dd><select name="prolong_time"><option>3 месяца</option></select>Сумма пополнения составит $100,00</dd>
+							</dl>
+							<dl>
+								<dt><label>Тип оплаты</label></dt>
+								<dd>
+									<label><input class="styled" type="radio" name="type" id="type_1" /><span>PayPal</span></label>
+									<label><input class="styled" type="radio" name="type" id="type_2" /><span>Webmoney</span></label>
+								</dd>
+							</dl>
+						</fieldset>
+						<input type="image" src="images/button_prolong.png" alt="Продлить" />
+					</form>
+				</div>
+			</div>
+			<h1 class="services-heading service-available">Доступные услуги</h1>
+			<dl class="services">
+				<dt class="service-voip"><strong>Телефония VoIP</strong>Вы ещё не пользовались этой услугой</dt>
+				<dd class="service-info service-available-info">Правда, специалисты отмечают, что опрос усиливает фактор коммуникации, отвоевывая свою долю рынка. Искусство медиапланирования, в рамках сегодняшних воззрений, многопланово концентрирует баинг и селлинг, используя опыт кампаний.</dd>
+				<dd class="service-action"><a href="#" class="choose-plan">Выбрать тарифный план</a></dd>
+			</dl>
+		</div>
+    </div>
+    <div class="footer">&copy; 1997—2010 &laquo;<a href="#">IMB+</a>&raquo;</div>
+</body>
+</html>

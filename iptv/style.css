@@ -1,0 +1,189 @@
+/* Reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0;	padding: 0;	border: 0; outline: 0;	font-size: 100%; vertical-align: baseline; background: transparent; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+body { background:#000f1a; color:#fff; font-family:Helvetica, Arial, sans-serif; font-size:11px; }
+
+.radio { background:url(images/radiobutton.png) no-repeat; clear:left; display:block; float:left; height:22px; padding:0 8px 0 0; width:23px; }
+
+.container, .footer { margin:0 auto; width:980px; }
+
+.toggle-screen { background:url(images/arrows.png) no-repeat 0 0; color:#fff; line-height:14px; padding-left:20px; }
+.alert { background:url(images/service_alert.png) no-repeat 0 0; display:inline-block; height:0; overflow:hidden; margin:-2px 0 -4px -5px; padding:18px 0 0; width:202px; }
+.currently-playing { display:block; margin:7px 0 0; left:-5px; position:relative; }
+
+.header { position:relative; width:100%; }
+.header .logo { float:left; margin:49px 0 0; }
+
+.user-section { display:table; padding:52px 0 54px 86px; width:781px; }
+.user-section h1 { font-size:18px; font-weight:normal; margin:0 0 7px; }
+.user-section h2 { color:#666; }
+.user-section .menu { display:inline; float:left; margin:15px 0 0 -10px; }
+.user-section .menu li { float:left; line-height:18px; padding:0 10px; margin-right:5px; vertical-align:bottom; }
+.user-section .menu li a, .user-section .controls a { color:#fff; text-decoration:none; }
+
+.user-section .menu .active a, .user-section .menu .active span,
+.user-section .controls .active a, .user-section .controls .active span { background:url(images/menu_item.png) no-repeat 0 0; display:inline-block; height:18px; line-height:18px; text-align:center; white-space:nowrap; }
+.user-section .menu .active a,
+.user-section .controls .active a { background-position:100% 0; cursor:default; color:#ffa800; padding-right:10px; text-decoration:none; }
+.user-section .menu .active span,
+.user-section .controls .active span { margin:0 -10px; padding-left:10px; }
+
+.user-section .controls { float:right; margin:15px -7px 0 0; position:relative; }
+.user-section .controls dt, .user-section .controls dd { float:left; line-height:18px; padding:0 10px; margin-left:3px; vertical-align:bottom; }
+.user-section .controls dt { color:#666; margin-right:4px; padding:0; }
+
+.user-section .menu .bullet, .user-section .controls .bullet { background:url(images/menu_bullet.png) no-repeat 0 7px; }
+
+.user-section input { clear:both; position:absolute; left:886px; top:46px; }
+
+.login-form { padding:45px 0 35px 85px; }
+.login-form input { vertical-align:middle; }
+.login-form .input { background:url(images/input.png) no-repeat 0 0; border:0 none; color:#fff; font:14px Arial, Helvetica, sans-serif; height:22px; line-height:22px; padding:10px 15px; width:301px; }
+.login-form .password { background-position:0 -42px; margin-left:16px; margin-right:9px; width:151px; }
+.login-form .register { margin-left:8px; position:absolute; }
+
+.registration { background:url(images/line.png) no-repeat bottom; position:relative; width:100%; }
+.registration h1 { color:#0073c9; font-size:59px; font-weight:normal; line-height:150px; text-indent:195px; }
+.registration .advantages { background:url(images/bubble.png) no-repeat 0 0; height:243px; width:275px; }
+.registration .advantages { left:659px; padding:46px 0 0; position:absolute; top:51px; }
+.registration .advantages h3 { color:#ffa800; font-family:"Myriad Pro"; font-size:24px; font-weight:normal; padding:0 70px; }
+.registration .advantages ul { font-size:12px; line-height:20px; padding:32px 0 0 46px; }
+.registration .advantages ul li { background:url(images/bullet.png) no-repeat 0 0; padding-left:26px; }
+
+.registration-form { padding:0 0 56px; }
+.registration-form p { padding:0 0 13px; }
+.registration-form label { font-size:14px; float:left; line-height:36px; width:200px; }
+.registration-form .tip { clear:both; display:block; line-height:25px; margin-left:200px; }
+.registration-form .input { background:url(images/input.png) no-repeat 0 -84px; border:0 none; color:#fff; font:14px Arial, Helvetica, sans-serif; height:22px; line-height:22px; padding:10px 15px; width:351px; }
+
+.registration-form .type { padding:8px 0 0 196px; width:auto; }
+.registration-form .type label { float:none; font-size:12px; display:block; line-height:20px; padding:0 0 10px; width:auto; }
+
+.registration-form .register { padding:27px 0 0 184px; }
+.registration-form .register a { color:#fff; }
+.registration-form .register input { margin-right:10px; vertical-align:middle; }
+
+.projects { padding:45px 0 40px; width:100%; }
+.projects:after { clear:both; content:'.'; display:block; height:0; line-height:0; visibility:hidden; }
+.projects h2 { font-family:"Myriad Pro", Helvetica, Verdana, sans-serif; font-size:10px; letter-spacing:1px; letter-spacing:2px; margin:0 0 22px; text-transform:uppercase; }
+.projects h4 { color:#ffa800; font-family:"Myriad Pro", Helvetica, Verdana, sans-serif; font-size:18px; font-weight:normal; line-height:20px; }
+.projects .project { float:left; height:78px; padding:22px 0 0; width:160px; }
+.projects .project span { line-height:25px; }
+.projects .project-radio { background:url(images/ico_radio.png) no-repeat 0 0; margin-left:-17px; padding-left:95px; position:relative; width:227px; }
+.projects .project-phone { background:url(images/ico_phone.png) no-repeat 0 0; margin-right:9px; padding-left:95px; width:220px; }
+.projects .project-internet { background:url(images/ico_internet.png) no-repeat 0 0; padding-left:95px; width:210px; }
+
+.footer { background:url(images/line.png) no-repeat 0 0; color:#666; padding:37px 0; }
+.footer a { color:#666; }
+
+.video { margin:40px -55px; position:relative; }
+.video-wrap { margin:-70px 0; position:relative; }
+.video-section { color:#666; padding:30px 0 26px; }
+.video-section .toggle-screen { float:right; }
+
+.video-collapsed { padding:0 0 10px; }
+
+.chatbox-wrap { background:url(images/roundbox.png) no-repeat top; margin:0 0 5px; padding:25px 0 0; position:relative; width:100%; }
+.chatbox { background:url(images/roundbox.png) no-repeat bottom; padding:0 30px 22px; position:relative; width:920px; }
+.chatbox .chat { line-height:20px; margin-bottom:54px; }
+.chatbox .chat li { padding:0 0 10px; }
+.chatbox .chat .name { color:#666; float:left; width:130px; }
+.chatbox .chat .user-name { color:#fff; }
+.chatbox .chat .message { display:table; }
+.chatbox .chat-say { left:10px; position:relative; }
+.chatbox .input { background:url(images/chatbox_input.png) no-repeat 0 0; border:0 none; color:#fff; font:14px Arial, Helvetica, sans-serif; height:25px; line-height:22px; padding:5px 15px; width:770px; }
+.chatbox input { vertical-align:middle; }
+
+.records { margin-left:-18px; }
+.records li { display:inline-block; vertical-align:top; margin-left:18px; padding:0 0 41px; position:relative; width:179px }
+.records li p { color:#666; margin:10px 0 5px; }
+.records li h3 { font-size:18px; margin:5px 0 0; }
+.records li h3 a { color:#fff; }
+.records .mask { background:url(images/image_mask_ie6.png) no-repeat 0 0; cursor:pointer; height:90px; left:0; position:absolute; top:0; width:140px; }
+
+.filters { padding:30px 0 40px; }
+.filters select, .filters input { vertical-align:middle; }
+.filters select { margin-right:25px; width:125px; }
+.filters .airing { margin-right:20px; }
+.filters .airing input { background:url(images/input_airing.png) no-repeat 0 0; border:0 none; font-size:11px; height:16px; margin:0 8px 0 10px; padding:2px 5px; width:61px; }
+.filters .search .input { font-size:11px; margin-right:9px; width:248px; }
+
+.services-wrap { padding:0 0 60px; }
+
+.services-heading { color:#0073c9; font-size:59px; font-weight:normal; left:-7px; letter-spacing:-1px; margin:0 0 41px; position:relative; top:-7px; }
+.service-available { margin:60px 0 33px; }
+
+.service-onlinetv { background:url(images/ico_onlinetv.png) no-repeat 0 0; }
+.service-iptv { background:url(images/ico_iptv.png) no-repeat 0 0; }
+.service-internet { background:url(images/ico_internet.png) no-repeat -2px -1px; }
+.service-voip { background:url(images/ico_phone.png) no-repeat 0 0; }
+
+.services { padding:0 0 20px; width:100%; }
+.services:after { clear:both; content:'.'; display:block; height:0; line-height:0; visibility:hidden; }
+.services dt, .services dd { float:left; }
+
+.services dt { display:block; height:80px; left:-17px; padding-left:90px; position:relative; width:288px; }
+.services dt strong { color:#ffa800; display:block; font-size:18px; font-weight:normal; margin:15px 0 5px; }
+.services dt strong sup { left:11px; position:relative; vertical-align:top; }
+.services dt strong sup a { color:#fff; font-size:11px; vertical-align:top; }
+.services .service-info { font-size:14px; line-height:19px; padding:18px 30px 0 0; width:397px; }
+.services .service-available-info { font-size:11px; line-height:17px; padding-top:12px; }
+.services .service-action { padding:11px 0 0; width:153px; }
+
+.prolong, .prolong-expired, .prolong-active, .change-plan, .choose-plan { background:url(images/service_actions.png) no-repeat 0 0; display:inline-block; height:0; overflow:hidden; padding:18px 0 0; width:89px; }
+.prolong { background-position:0 -18px; }
+.prolong-active { background-position:0 -36px; }
+.prolong-expired { background-position:0 0; margin:15px 0 0; }
+.change-plan, .choose-plan { background-position:0 -54px; width:153px; }
+.change-plan { margin:0 0 7px; }
+.choose-plan { background-position:0 -72px; }
+
+.prolong-service-wrap { background:url(images/roundbox.png) no-repeat top; position:relative; padding:20px 0 0; width:100%; }
+.prolong-service { background:url(images/roundbox.png) no-repeat bottom; padding:0 22px 24px; }
+.prolong-service fieldset { background:url(images/line.png) no-repeat bottom; margin:0 0 25px; padding:0 0 20px; }
+.prolong-service .first { margin:-20px 0 0; position:relative; }
+.prolong-service dl { padding:24px 0 5px; }
+.prolong-service dt { float:left; font-size:14px; width:195px; }
+.prolong-service dd { display:table; font-size:12px; }
+.prolong-service dd select { margin-right:15px; vertical-align:middle; width:125px; }
+.prolong-service dd label { display:inline; margin-right:30px; }
+.prolong-service dd label .radio { display:inline-block; height:22px; float:none; position:relative; vertical-align:middle; }
+
+.services-history h1 { color:#0073c9; font-size:59px; font-weight:normal; left:-7px; position:relative; top:-7px; }
+.service-name { height:85px; margin-left:-16px; padding:16px 0 0 90px; position:relative; }
+.service-name h4 { color:#ffa800; font-family:"Myriad Pro", Helvetica, Verdana, sans-serif; font-size:18px; font-weight:normal; line-height:20px; letter-spacing:1px; }
+.service-name span { color:#666; line-height:25px; }
+
+.service-history table { font-size:12px; width:100%; }
+.service-history table .tip { color:#666; font-size:11px; }
+.service-history table .price { font-size:18px; padding:0 0 8px 74px; }
+.service-history .history { background:url(images/line.png) no-repeat top; margin:0 0 30px; padding:20px 0 0; }
+.service-history .history-last { margin-bottom:50px; }
+.service-history .history-table-wrap { background:url(images/line.png) no-repeat bottom; padding:0 0 20px; }
+
+.changepass-form { margin:-5px 0 0 -5px; padding:0 0 55px; position:relative; width:100%; }
+.changepass-form p { overflow:hidden; padding:0 0 18px; width:100%; }
+.changepass-form label { float:left; font-size:14px; line-height:40px; width:200px; }
+.changepass-form .input { background:url(images/input.png) no-repeat 0 -84px; border:0 none; color:#fff; font:14px Arial, Helvetica, sans-serif; height:22px; line-height:22px; padding:10px 15px; width:351px; }
+.changepass-form .changepass { padding:10px 0 0 200px; width:auto; }
+.changepass-form .changepass input { left:-10px; position:relative; }
+
+.prices table { margin:-5px 0 0 -5px; position:relative; width:100%; }
+.prices table th { color:#666; font-size:11px; padding:0 0 23px; text-align:left; }
+.prices table td { font-size:18px; padding:5px 0 0; }
+.prices table label { font-size:11px; }
+.prices table label .type { border-bottom:1px dotted #fff; cursor:pointer; }
+.prices table label .radio { display:inline-block; float:none; left:-5px; position:relative; vertical-align:middle; }
+.prices table .first td { padding:20px 0 0; }
+
+.prices-table-wrap { background:url(images/line.png) no-repeat 0 30px; padding:0 0 23px; }
+.prices-table-wrap .inner { background:url(images/line.png) no-repeat bottom; padding:0 0 25px; }
+
+.prices-change-plan { padding:0 0 53px; }
+.prices-change-plan input { left:-20px; position:relative; }

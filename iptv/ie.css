@@ -1,0 +1,6 @@
+.user-section, .user-section .menu .active a, .user-section .menu .active span, .video-wrap, .video,
+.user-section .controls .active a, .user-section .controls .active span { zoom:1; }
+.user-section { width:auto; }
+.prolong-service dd { width:500px; }
+.prolong-service dd label .radio { display:inline; zoom:1; }
+.records li { display:inline; zoom:1; }

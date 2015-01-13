@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="ie.css" media="all" />
+    <![endif]-->
+    <!--[if lte IE 6]>
+        <script type="text/javascript" src="js/pngfix.js"></script>
+        <script type="text/javascript">
+            DD_belatedPNG.fix('img, .png_bg, .btn a, .sidebar h4, .footer-nav .active, .footer-nav .active span');
+        </script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="js/custom_elements.js"></script>
+    <script type="text/javascript" src="js/resize.js"></script>
+    <script type="text/javascript" src="js/drop.js"></script>
+</head>
+<body class="home">
+	<div class="shadow png_bg">
+		<div class="container">
+			<div class="header">
+				<div class="logo"><a href="#"><img src="img/logo.png" height="190" width="190" alt="" /></a></div>
+				<div class="header-about png_bg">
+					<h1>Квартиры посуточно</h1>
+					<h2>в <a href="#">Киеве</a> без посредников</h2>
+					<p>Private Hotel — это всеукраинский каталог квартир, которые сдаются посуточно от хозяев. Выбирайте нужную квартиру, узнайте о ближайших достопримечательностях, и планируйте проживание без посредников или комиссионных.</p>
+				</div>
+				<div class="choose-here png_bg">
+					<form action="" method="post">
+						<fieldset>
+								<h2>Начните подбор здесь</h2>
+								<a href="#">Другой город</a>
+								<p class="district">
+									<label for="district" class="label">Район</label>
+									<select name="district" id="district" class="styled">
+										<option value="1">Шевченковский</option>
+									</select>
+									<input type="checkbox" class="styled" name="near_subway" id="near_subway" /><label for="near_subway">Возле метро</label>
+								</p>
+								<p class="rooms">
+									<label for="room_qty_from">Кол-во комнат: </label>
+									<span class="room-qty"><label for="room_qty_from">от</label> <input type="text" class="input-text qty-from" name="room_qty_from" id="room_qty_from" size="2" value="1" /> <label for="room_qty_to">до</label> <input type="text" class="input-text qty-to" name="room_qty_to" id="room_qty_to" size="2" value="10" /></span>
+								</p>
+								<p class="price">
+									<label for="price_from">Цена (грн)</label>
+									<span class="price-range">от <input type="text" class="input-text price-from" name="price_from" id="price_from" size="5" value="300" /> до <input type="text" class="input-text price-to" name="price_to" id="price_to" size="5" value="10000" /></span>
+								</p>
+								<p class="button">
+									<button><span>Показать квартиры</span></button>
+								</p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-inner">
+					<div class="section">
+						<div class="nav png_bg">
+							<ul>
+								<li class="active"><span>Главная</span></li>
+								<li><a href="#" class="dropdown"><span>Все квартиры</span></a></li>
+								<li><a href="#"><span>Расширенный поиск</span></a></li>
+							</ul>
+							<a href="#" class="add">Добавить квартиру</a>
+						</div>
+						<div class="content png_bg">
+                        <div class="slideshow">
+							<img src="img/banner.jpg" height="180" width="739" alt="" />
+                        </div>
+                        <div class="vip">
+                            <h2>Квартиры посуточно от VIP-хозяев </h2>
+                            <ul class="vip-list">
+                                <li class="row">
+                                    <div class="photo"><img src="img/vip_1.jpg" height="68" width="48" alt="" /></div>
+                                    <div class="summary">
+                                        <h3><a href="#">12 квартир</a></h3>
+                                        <h4>(044) 340-34-30</h4>
+                                        <p>Константин<br />Константинопольский</p>
+                                        <span class="bar"><span class="progress" style="width:50%;">50%</span></span>
+                                    </div>
+                                </li>
+                                <li class="row">
+                                    <div class="photo"><img src="img/vip_1.jpg" height="68" width="48" alt="" /></div>
+                                    <div class="summary">
+                                        <h3><a href="#">12 квартир</a></h3>
+                                        <h4>(044) 340-34-30</h4>
+                                        <p>Константин<br />Константинопольский</p>
+                                        <span class="bar"><span class="progress" style="width:50%;">50%</span></span>
+                                    </div>
+                                </li>
+                                <li class="row">
+                                    <div class="photo"><img src="img/vip_1.jpg" height="68" width="48" alt="" /></div>
+                                    <div class="summary">
+                                        <h3><a href="#">12 квартир</a></h3>
+                                        <h4>(044) 340-34-30</h4>
+                                        <p>Константин<br />Константинопольский</p>
+                                        <span class="bar"><span class="progress" style="width:50%;">50%</span></span>
+                                    </div>
+                                </li>
+                                <li class="row last">
+                                    <div class="photo"><img src="img/vip_1.jpg" height="68" width="48" alt="" /></div>
+                                    <div class="summary">
+                                        <h3><a href="#">12 квартир</a></h3>
+                                        <h4>(044) 340-34-30</h4>
+                                        <p>Константин<br />Константинопольский</p>
+                                        <span class="bar"><span class="progress" style="width:50%;">50%</span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="photo"><img src="img/vip_1.jpg" height="68" width="48" alt="" /></div>
+                                    <div class="summary">
+                                        <h3><a href="#">12 квартир</a></h3>
+                                        <h4>(044) 340-34-30</h4>
+                                        <p>Константин<br />Константинопольский</p>
+                                        <span class="bar"><span class="progress" style="width:50%;">50%</span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="photo"><img src="img/vip_1.jpg" height="68" width="48" alt="" /></div>
+                                    <div class="summary">
+                                        <h3><a href="#">12 квартир</a></h3>
+                                        <h4>(044) 340-34-30</h4>
+                                        <p>Константин<br />Константинопольский</p>
+                                        <span class="bar"><span class="progress" style="width:50%;">50%</span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="photo"><img src="img/vip_1.jpg" height="68" width="48" alt="" /></div>
+                                    <div class="summary">
+                                        <h3><a href="#">12 квартир</a></h3>
+                                        <h4>(044) 340-34-30</h4>
+                                        <p>Константин<br />Константинопольский</p>
+                                        <span class="bar"><span class="progress" style="width:50%;">50%</span></span>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="photo"><img src="img/vip_1.jpg" height="68" width="48" alt="" /></div>
+                                    <div class="summary">
+                                        <h3><a href="#">12 квартир</a></h3>
+                                        <h4>(044) 340-34-30</h4>
+                                        <p>Константин<br />Константинопольский</p>
+                                        <span class="bar"><span class="progress" style="width:50%;">50%</span></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+						</div>
+						<div class="footer png_bg">
+							<ol class="flats-list flats-list-block">
+                            <li>
+                                <div class="flat">
+                                    <div class="photo">
+                                        <img src="img/flat_block_1.jpg" height="88" width="118" alt="" />
+                                    </div>
+                                    <div class="flat-desc">
+                                        <div class="hgroup">
+                                            <h3><a href="#">Рейтерская ул., 18</a></h3>
+                                            <h4>Голосеевский район, 1-комната</h4>
+                                        </div>
+                                        <div class="flat-footer">
+                                            <big class="price">650 грн</big>
+                                            <span class="rating"><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star_empty.png" height="11" width="12" alt="" /></span>
+                                        </div>
+                                        <span class="tel">(044) 452-60-11</span>
+                                    </div>
+                                </div>
+                                <div class="flat-bottom"></div>
+                            </li>
+                            <li>
+                                <div class="flat">
+                                    <div class="photo">
+                                        <img src="img/flat_block_2.jpg" height="88" width="118" alt="" />
+                                    </div>
+                                    <div class="flat-desc">
+                                        <div class="hgroup">
+                                            <h3><a href="#">Трехсвятительский пер. 16</a></h3>
+                                            <h4>Голосеевский район, 1-комната</h4>
+                                        </div>
+                                        <div class="flat-footer">
+                                            <big class="price">930 грн</big>
+                                            <span class="rating"><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star_empty.png" height="11" width="12" alt="" /></span>
+                                        </div>
+                                        <span class="tel">(044) 450-67-87</span>
+                                    </div>
+                                </div>
+                                <div class="flat-bottom"></div>
+                            </li>
+                            <li>
+                                <div class="flat">
+                                    <div class="photo">
+                                        <img src="img/flat_block_1.jpg" height="88" width="118" alt="" />
+                                    </div>
+                                    <div class="flat-desc">
+                                        <div class="hgroup">
+                                            <h3><a href="#">Рейтерская ул., 18</a></h3>
+                                            <h4>Голосеевский район, 1-комната</h4>
+                                        </div>
+                                        <div class="flat-footer">
+                                            <big class="price">650 грн</big>
+                                            <span class="rating"><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star_empty.png" height="11" width="12" alt="" /></span>
+                                        </div>
+                                        <span class="tel">(044) 452-60-11</span>
+                                    </div>
+                                </div>
+                                <div class="flat-bottom"></div>
+                            </li>
+                            <li class="last">
+                                <div class="flat">
+                                    <div class="photo">
+                                        <img src="img/flat_block_2.jpg" height="88" width="118" alt="" />
+                                    </div>
+                                    <div class="flat-desc">
+                                        <div class="hgroup">
+                                            <h3><a href="#">Трехсвятительский пер. 16</a></h3>
+                                            <h4>Голосеевский район, 1-комната</h4>
+                                        </div>
+                                        <div class="flat-footer">
+                                            <big class="price">930 грн</big>
+                                            <span class="rating"><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star.png" height="11" width="12" alt="" /><img src="img/i_star_empty.png" height="11" width="12" alt="" /></span>
+                                        </div>
+                                        <span class="tel">(044) 450-67-87</span>
+                                    </div>
+                                </div>
+                                <div class="flat-bottom"></div>
+                            </li>
+                        </ol>
+						</div>
+					</div>
+					<div class="sidebar">
+						<h4><a href="#">Киев</a></h4>
+						<dl class="filters first png_bg">
+							<dt class="png_bg">Районы Киева</dt>
+							<dd><a href="#">Дарницкий</a> (21)</dd>
+							<dd><a href="#">Днепровский</a> (19)</dd>
+							<dd><a href="#">Деснянский</a> (24)</dd>
+							<dd><a href="#">Голосевский</a> (8)</dd>
+							<dd><a href="#">Соломенский</a> (15)</dd>
+							<dd><a href="#">Святошинский</a> (22)</dd>
+							<dd><a href="#">Оболонский</a> (32)</dd>
+							<dd><a href="#">Подольский</a> (29)</dd>
+							<dd><a href="#">Печерский</a> (30)</dd>
+							<dd><a href="#">Шевченковский</a> (34)</dd>
+						</dl>
+						<dl class="filters png_bg">
+							<dt class="png_bg">Количество комнат</dt>
+							<dd><a href="#">1-комнатные</a> (56)</dd>
+							<dd><a href="#">2-комнатные</a> (39)</dd>
+							<dd><a href="#">3- комнатные</a> (30)</dd>
+							<dd><a href="#">4-комнатные</a> (15)</dd>
+						</dl>
+						<dl class="filters last png_bg">
+							<dt class="png_bg">Цена в сутки</dt>
+							<dd><a href="#">до 500 грн</a> (56)</dd>
+							<dd><a href="#">от 501 до 1000 грн</a> (39)</dd>
+							<dd><a href="#">от 1001 грн</a> (30)</dd>
+						</dl>
+						<p class="other png_bg"><a href="#">Другие параметры</a></p>
+					</div>
+					<div class="lamp png_bg"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-wrap">
+			<div class="footer png_bg">
+				<div class="lamp png_bg"></div>
+				<ul class="footer-nav">
+					<li class="active"><span>Главная</span></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Добавить квартиру</a></li>
+					<li><a href="#">Пользовательское соглашение</a></li>
+				</ul>
+				<p class="about">Private Hotel — это всеукраинский портал посуточных квартир в Киеве без посредников. Здесь Вы можете найти и забронировать нужную Вам квартиру в разных уголках Украины напрямую от владельцев с прямыми контактными данными</p>
+				<p class="copyright">© Private Hotel 2010</p>
+			</div>
+		</div>
+	</div>
+    <div class="mask" id="mask"></div>
+    <div class="megadrop" id="megadrop">
+		<table>
+			<tr>
+				<td>
+					<div class="drop-content">
+						<div class="close" id="close"></div>
+						<h3>Все квартиры</h3>
+						<div class="border-top-right png_bg">
+							<div class="border-top-left png_bg">
+								<table>
+									<tr>
+										<th>По району</th>
+										<th>По цене</th>
+										<th>По кол-ву комнат</th>
+										<th>А так же</th>
+									</tr>
+									<tr>
+										<td>
+											<ul>
+												<li><a href="#">Дарницкий</a> (21)</li>
+												<li><a href="#">Днепровский</a> (19)</li>
+												<li><a href="#">Деснянский</a> (24)</li>
+												<li><a href="#">Голосеевский</a> (8)</li>
+												<li><a href="#">Соломенский</a> (15)</li>
+												<li><a href="#">Святошинский</a> (22)</li>
+												<li><a href="#">Оболонский</a> (32)</li>
+												<li><a href="#">Подольский</a> (29)</li>
+												<li><a href="#">Печерский</a> (30)</li>
+												<li><a href="#">Шевченковский</a> (34)</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li><a href="#">300-500 грн/сутки</a> (21)</li>
+												<li><a href="#">501-700 грн/сутки</a> (19)</li>
+												<li><a href="#">701-900 грн/сутки</a> (24)</li>
+												<li><a href="#">901-1200 грн/сутки</a> (8)</li>
+												<li><a href="#">1201-1600 грн/сутки</a> (15)</li>
+												<li><a href="#">1601-2000 грн/сутки</a> (22)</li>
+												<li><a href="#">более 2000 грн/сутки</a> (12)</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li><a href="#">1-комнатные</a> (21)</li>
+												<li><a href="#">2-комнатные</a> (19)</li>
+												<li><a href="#">3-комнатные</a> (24)</li>
+												<li><a href="#">4-комнатные</a> (8)</li>
+												<li><a href="#">5 и более</a> (7)</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li><a href="#">Позняки</a> (21)</li>
+												<li><a href="#">МВЦ</a> (19)</li>
+												<li><a href="#">Левый берег</a> (24)</li>
+												<li><a href="#">Премиум-класс</a> (8)</li>
+												<li><a href="#">Дома посуточно</a> (15)</li>
+												<li><a href="#">Возле метро</a> (34)</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th>Квартиры</th>
+										<th>&nbsp;</th>
+										<th>&nbsp;</th>
+										<th>&nbsp;</th>
+									</tr>
+									<tr>
+										<td>
+											<ul>
+												<li><a href="#">Позняки</a> (21)</li>
+												<li><a href="#">МВЦ</a> (19)</li>
+												<li><a href="#">Левый берег</a> (24)</li>
+												<li><a href="#">Премиум-класс</a> (8)</li>
+												<li><a href="#">Дома посуточно</a> (15)</li>
+												<li><a href="#">Возле метро</a> (34)</li>
+											</ul>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="border-bottom-right png_bg">
+							<div class="border-bottom-left png_bg"></div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+    </div>
+</body>
+</html>

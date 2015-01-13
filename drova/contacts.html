@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=1014">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+
+            <header class="header">
+
+                <ul class="lang">
+                    <li><a href="#">Eng</a></li>
+                    <li><a href="#" class="lang-ru" style="display: none;">Ru</a></li>
+                </ul>
+
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="drova.html">Дрова колотые</a></li>
+                        <li><a href="pileti.html">Пеллеты</a></li>
+                        <li><a href="pack.html">Упаковка</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="contact">
+                    <span class="tel">+38 067 767 03 77</span>
+                    <span class="working-hours">с 8:00 до 21:00</span>
+                    <a class="skype" href="#"><img src="img/i_skype.png" height="13" width="14" alt="" /> <span>ukr.bio.toplivo</span></a>
+                </div>
+
+                <div class="cart"></div>
+
+            </header>
+
+            <div class="content">
+
+                <div class="contacts clearfix">
+                    <div class="left">
+                        <h1>Contacts</h1>
+                        <dl>
+                            <dt>Adress</dt>
+                            <dd>Украина, Харьков, 61024, ул. Петровского 33А, офис 2</dd>
+
+                            <dt>Direction</dt>
+                            <dd>+38 (067) 676-80-62</dd>
+
+                            <dt>Sales Dept:</dt>
+                            <dd>
+                                +38 (067) 767-03-77<br/>
+                                <a href="mailto:ukr.bio.toplivo@gmail.com">ukr.bio.toplivo@gmail.com</a><br/>
+                                <a href="#"><img src="img/i_skype_blue.png" height="15" width="15" alt="">ukr.bio.toplivo</a>
+                            </dd>
+
+                            <dt>Logistic Dept:</dt>
+                            <dd>
+                                +38 (067) 340-28-02<br/>
+                                <a href="mailto:uabiofuels@mail.ru">uabiofuels@mail.ru</a><br/>
+                                <a href="mailto:uabiofuels@gmail.com">uabiofuels@gmail.com</a><br/>
+                                <a href="#"><img src="img/i_skype_blue.png" height="15" width="15" alt="">uabiofuels</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="map">
+                        <h2>Наши производственные площадки:</h2>
+                        <div class="map-wrapper" id="map"></div>
+                        <p>Компания Укрбиотопливо является крупным экспортером биотоплива (дров колотых и древесных пеллет) для нужд потребителей и бизнеса стран Евросоюза.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script>
+          function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+              center: new google.maps.LatLng(44.494733, 34.126483),
+              zoom: 15,
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              disableDefaultUI: true
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.jcarousel.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

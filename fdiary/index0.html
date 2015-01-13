@@ -1,0 +1,732 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>fDiary</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#nav .wiki").hover(function() {
+				$(this).addClass("wiki-hover");
+			}, function() {
+				$(this).removeClass("wiki-hover");
+			});
+		});
+	</script>
+</head>
+<body>
+	
+    <div class="container">
+    
+        <div class="top-banner"><img src="images/content/banner_730_90.jpg" alt="" /></div>
+        
+        <div class="header-links">
+            <dl class="services">
+                <dt><strong>F.Сервисы:</strong></dt>
+                <dd><a href="#">Проект 1</a></dd>
+                <dd><a href="#">Проект 2</a></dd>
+                <dd><a href="#">Проект 3</a></dd>
+                <dd><a href="#">Проект 4</a></dd>
+            </dl>
+            <ul class="links">
+            	<li><a href="#" class="twitter">Twitter</a></li>
+            	<li><a href="#" class="rss">Центр подписки</a></li>
+            </ul>
+        </div>
+        
+        <div class="header">
+            <a href="#" class="logo"><img src="images/fdiary_logo.png" alt="" /></a>
+            <div class="search">
+                <fieldset>
+                	<form action="" method="post">
+						<p class="search-box">
+							<input class="input" type="text" name="query" id="query" /><input type="image" src="images/btn_search.png" alt="Найти" />
+						</p>
+						<label for="search_rubric"><input type="radio" name="search_type" id="search_rubric" />По разделу</label>
+						<label for="search_site"><input type="radio" name="search_type" id="search_site" />По сайту</label>
+                    </form>
+                </fieldset>
+            </div>
+            <dl class="user">
+				<dt class="avatar"><img src="images/avatar.jpg" alt="" /></dt>
+				<dd class="inbox"><img src="images/ico_inbox.png" alt="" />( <a href="#">1</a> )</dd>
+				<dd class="logout"><input type="image" src="images/btn_logout.png" alt="Выйти" /></dd>
+                <dd class="username"><a href="#">Homer Simpson123</a></dd>
+                <dd class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></dd>
+                <dd class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /><img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></dd>
+            </dl>
+            <div class="widget"></div>
+        </div>
+        <div class="nav">
+            <ul id="nav">
+                <li class="active home"><a href="#">На главную</a></li>
+                <li><a href="#">Персональная часть</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">F. Новости</a></li>
+                <li><a href="#">F. Сообщество</a></li>
+                <li class="wiki">
+					<span class="rounded"><a href="#">Энциклопедия рыбалки</a></span>
+					<div class="dropdown">
+						<dl class="col-1">
+							<dt><a href="#">Спортивный спиннинг</a></dt>
+							<dd><a href="#">Спиннинговое удилище</a></dd>
+							<dd><a href="#">Катушка</a></dd>
+							<dd><a href="#">Плетеная леска</a></dd>
+							<dd><a href="#">Монофильная леска</a></dd>
+							<dd><a href="#">Поводок</a></dd>
+							<dd class="last"><a href="#">Статьи в тему</a></dd>
+							<dt><a href="#">Искусственные приманки</a></dt>
+							<dd><a href="#">Блесны</a></dd>
+							<dd><a href="#">Воблеры</a></dd>
+							<dd><a href="#">Спиннер-бейты</a></dd>
+							<dd class="last"><a href="#">Мягкие приманки</a></dd>
+							<dt><a href="#">Глухая удочка</a></dt>
+							<dd><a href="#">Удилище</a></dd>
+							<dd><a href="#">Основная леска</a></dd>
+							<dd><a href="#">Современный поплавок</a></dd>
+							<dd><a href="#">Грузила</a></dd>
+							<dd><a href="#">Поводок и крючок</a></dd>
+							<dd><a href="#">Сборка оснастки</a></dd>
+							<dd><a href="#">Правила эксплуатации. Уход за удилищем.</a></dd>
+						</dl>
+						<dl class="col-2">
+							<dt><a href="#">Рыбы наших вод</a></dt>
+							<dd><a href="#">Синец</a></dd>
+							<dd><a href="#">Белый амур</a></dd>
+							<dd><a href="#">Голавль</a></dd>
+							<dd><a href="#">Гольян</a></dd>
+							<dd><a href="#">Густера</a></dd>
+							<dd><a href="#">Ерш</a></dd>
+							<dd><a href="#">Жерех</a></dd>
+							<dd><a href="#">Карась</a></dd>
+							<dd><a href="#">Карп</a></dd>
+							<dd><a href="#">Красноперка</a></dd>
+							<dd><a href="#">Лещ</a></dd>
+							<dd><a href="#">Линь</a></dd>
+							<dd><a href="#">Налим</a></dd>
+							<dd><a href="#">Окунь</a></dd>
+							<dd><a href="#">Плотва</a></dd>
+							<dd><a href="#">Сом</a></dd>
+							<dd><a href="#">Судак</a></dd>
+							<dd><a href="#">Толстолобик</a></dd>
+							<dd><a href="#">Угорь</a></dd>
+							<dd><a href="#">Уклейка</a></dd>
+							<dd><a href="#">Чехонь</a></dd>
+							<dd><a href="#">Щука</a></dd>
+						</dl>
+						<dl class="col-3">
+							<dt><a href="#">Крючок</a></dt>
+							<dd><a href="#">История крючка</a></dd>
+							<dd><a href="#">Типы крючков</a></dd>
+							<dd><a href="#">Размеры крючка</a></dd>
+							<dd><a href="#">Толщина крючка</a></dd>
+							<dd><a href="#">Ушко крючка</a></dd>
+							<dd><a href="#">Цевье крючка</a></dd>
+							<dd><a href="#">Форма поддева крючка</a></dd>
+							<dd><a href="#">Форма крючка</a></dd>
+							<dd><a href="#">Жало крючка</a></dd>
+							<dd><a href="#">Офсетное жало</a></dd>
+							<dd><a href="#">Дефекты крючков</a></dd>
+							<dd><a href="#">Покрытие крючков</a></dd>
+							<dd class="last"><a href="#">Нумерация крючков - таблица соотношений</a></dd>
+							<dt><a href="#">Насадки и наживки</a></dt>
+							<dd><a href="#">Животная насадка</a></dd>
+							<dd><a href="#">Комбинированная насадка</a></dd>
+							<dd><a href="#">Насекомые и их личинки</a></dd>
+							<dd><a href="#">Растительная насадка</a></dd>
+							<dd><a href="#">Специальное</a></dd>
+						</dl>
+						<dl class="col-4">
+							<dt><a href="#">Рыбы. Основы ихтиологии</a></dt>
+							<dd><a href="#">Особенности рыб</a></dd>
+							<dd><a href="#">Поведение рыб</a></dd>
+							<dd><a href="#">Условия обитания</a></dd>
+							<dd><a href="#">Размножение</a></dd>
+							<dd><a href="#">Питание</a></dd>
+							<dd><a href="#">Возраст, рост, размеры</a></dd>
+							<dd><a href="#">Органы чувств</a></dd>
+							<dd><a href="#">Мускулатура рыб</a></dd>
+							<dd><a href="#">Пищеварительная система</a></dd>
+							<dd><a href="#">Скелет</a></dd>
+							<dd><a href="#">Органы дыхания</a></dd>
+							<dd><a href="#">Половая система</a></dd>
+							<dd><a href="#">Кровеносная система</a></dd>
+							<dd><a href="#">Органы движения</a></dd>
+							<dd class="last"><a href="#">Болезни рыб</a></dd>
+							<dt><a href="#">Электроника в помощь</a></dt>
+							<dd><a href="#">GPS навигаторы и карты</a></dd>
+							<dd class="last"><a href="#">Эхолоты</a></dd>
+							<dt><a href="#">Производители рыболовных товаров</a></dt>
+						</dl>
+						<dl class="col-5">
+							<dt><a href="#">F. Каталог сайтов</a></dt>
+							<dd><a href="#">Информационно-развлекательные ресурсы</a></dd>
+							<dd><a href="#">Интернет-магазины</a></dd>
+							<dd><a href="#">Клубы и спортивные ассоциации</a></dd>
+							<dd><a href="#">СМИ</a></dd>
+							<dd><a href="#">Партнерские сайты</a></dd>
+							<dd class="last"><a href="#">Подать заявку на размещение в каталоге</a></dd>
+							<dt><a href="#">Другое</a></dt>
+							<dd><a href="#">Номерные знаки Украины</a></dd>
+							<dd><a href="#">Расшифровка штрих-кодов на товарах</a></dd>
+							<dd class="last"><a href="#">Соответсткие размеров одежды и обуви</a></dd>
+							<dt><a href="#">Таблица мер и весов</a></dt>
+							<dd><a href="#">Линейные меры</a></dd>
+							<dd><a href="#">Меры площади</a></dd>
+							<dd><a href="#">Меры веса</a></dd>
+							<dd><a href="#">Меры жидкости</a></dd>
+						</dl>
+					</div>
+				</li>
+                <li><a href="#">F. Отчеты</a></li>
+                <li><a href="#">F. Статистика</a></li>
+                <li><a href="#">F. Рейтинги</a></li>
+                <li><a href="#">F. Галерея</a></li>
+                <li><a href="#">F. Форум</a></li>
+            </ul>
+        </div>
+        
+        <div class="wrap">
+            
+            <div class="content">
+            
+                <div class="columns-wrap">
+                
+                    <div class="column-1">
+            
+                        <div class="multimedia multimedia-photo">
+                            <ul class="tabs">
+                                <li class="video"><a href="#">Видео</a></li>
+                                <li class="photo"><a href="#">Фото</a></li>
+                            </ul>
+                            <div class="tabs-content">
+                                <div class="image"><img src="images/content/tab_image_1_big.jpg" alt="" /></div>
+                                <div class="controls">
+                                    <a href="#" class="prev">Назад</a><a href="#" class="next">Вперед</a>
+                                </div>
+                                <ul class="tabs-list">
+                                    <li><a href="#"><img src="images/content/tab_image_2.jpg" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/content/tab_image_3.jpg" alt="" /></a></li>
+                                </ul>
+                                <a href="#" class="all">Все видео</a>
+                            </div>
+                        </div>
+                        
+                        <div class="about-service">
+                            <h2><span>О сервисе</span></h2>
+                            <!-- Change to sprite -->
+                            <ul>
+                                <li><a href="#" class="add-news">Добавить новость</a></li>
+                                <li><a href="#" class="add_report">Добавить отчет</a></li>
+                                <li><a href="#" class="add_article">Добавить статью</a></li>
+                                <li><a href="#" class="enter-club">Вступить в F.Клуб</a></li>
+                                <li><a href="#" class="catch-forecast">Прогноз уловов</a></li>
+                                <li><a href="#" class="subscribe">Центр подписки</a></li>
+                            </ul>
+                            <p><strong>Ноу-Хау F.Diary</strong> &mdash; автоматическое ведение <a href="#">статистики уловов</a> и <a href="#">рейтинга снастей</a> на основе <a href="#">отчетов по рыбалке</a>.</p>
+                            <a href="#" class="more"><span>Подробнее</span></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="column-2">
+                    
+                        <div class="news">
+                            <h2 class="heading"><span>Новости</span></h2>
+                            <div class="headline">
+                                <div class="headline-img"><img src="images/content/news_image_big.jpg" alt="" /></div>
+                                <h3><a href="#">Британскими учеными доказано: 5 минут на рыбалке - панацея от стресса</a></h3>
+                                <p>В надежде заманить cтальноголовую форель в горные реки Санта Моники, транспортное агентство Калифорнии планирует потратить $ 935 000 чтобы оградить часть пляжа грядой камней.</p>
+                                <div class="summary">
+                                    <span class="date">28.04.2010</span>
+                                    <span class="comments-total"><strong>Комментариев:</strong> <a href="#">8</a></span>
+                                </div>
+                            </div>
+                            <ol class="news-list">
+                                <li>
+                                    <div class="list-img"><a href="#"><img src="images/content/news_list_image.jpg" alt="" /></a></div>
+                                    <p><a href="#">В водах Сипадана (остров в Малайзии) стремительно растет количество рыбы.</a></p>
+                                </li>
+                                <li>
+                                    <div class="list-img"><a href="#"><img src="images/content/news_list_image.jpg" alt="" /></a></div>
+                                    <p><a href="#">Не кладите пойманную рыбу в рот, пользуйтесь садкам!</a></p>
+                                </li>
+                                <li class="last">
+                                    <div class="list-img"><a href="#"><img src="images/content/news_list_image.jpg" alt="" /></a></div>
+                                    <p><a href="#">Природе все под силу: крупные окуни способны охотится на опасную рыбу-льва.</a></p>
+                                </li>
+                            </ol>
+                            <a href="#" class="more"><span>Все новости</span></a>
+                        </div>
+                        
+                        <div class="reports">
+                            <h2 class="heading"><span>Отчеты</span></h2>
+                            <div class="headline">
+                                <div class="headline-img"><img src="images/content/reports_image_big.jpg" alt="" /></div>
+                                <h3><a href="#">Название отчета</a></h3>
+                                <!-- Maybe DL? -->
+                                <ul class="report-author">
+                                    <li class="username"><strong>Автор:</strong> <a href="#">gorunuch</a></li>
+                                    <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                    <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /><img src="images/ico_medal_1.png" alt="" /></li>
+                                </ul>
+                                <dl>
+                                    <dt>Дата:</dt>
+                                    <dd>25.04.2010</dd>
+                                    <dt>Количество рыбы:</dt>
+                                    <dd>29</dd>
+                                    <dt>Общий вес улова:</dt>
+                                    <dd>3,8 кг</dd>
+                                </dl>
+                                <p>Ловил на гуйве на течении червь навозный, опарыш, тесто игнорироваись напрочь.</p>
+                                <!-- plain images? -->
+                                <div class="summary">
+                                    <span class="photos">4</span>
+                                    <span class="video">0</span>
+                                    <span class="comments-total"><strong>Комментариев:</strong> <a href="#">8</a></span>
+                                </div>
+                            </div>
+                            <ol class="reports-list">
+                                <li>
+                                    <div class="list-img"><img src="images/content/news_list_image.jpg" alt="" /></div>
+                                    <h4><a href="#">Название отчета</a></h4>
+                                    <dl>
+                                        <dt><strong>Автор:</strong> <a href="#">gorunuch</a></dt>
+                                        <dd><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></dd>
+                                        <dd>Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /><img src="images/ico_medal_1.png" alt="" /></dd>
+                                    </dl>
+                                </li>
+                                <li class="last">
+                                    <div class="list-img"><img src="images/content/news_list_image.jpg" alt="" /></div>
+                                    <h4><a href="#">Название отчета</a></h4>
+                                    <dl>
+                                        <dt><strong>Автор:</strong> <a href="#">gorunuch</a></dt>
+                                        <dd><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></dd>
+                                    </dl>
+                                </li>
+                            </ol>
+                            <a href="#" class="more"><span>Все отчеты</span></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="columns-wrap">
+                
+                    <div class="column-3">
+                        
+                        <div class="articles">
+                            <h2 class="heading"><span>Статьи</span></h2>
+                            <div class="headline">
+                                <div class="headings">
+                                    <img src="images/content/articles_headline.jpg" alt="" />
+                                    <div class="box">
+                                        <h3>Мускулатура рыб</h3>
+                                        <span>Раздел: <a href="#">Рыбы. Основы ихтиологии</a></span>
+                                    </div>
+                                </div>
+                                <div class="headline-text">
+                                    <p>Мускулатура, или мясо, рыб чаще всего бесцветна. Химический состав мяса, жирность, пищевые и вкусовые качества в сильной степени зависят от того, чем питается рыба и каково ее физиологическое состояние.</p>
+                                </div>
+                            </div>
+                            <ul class="articles-list">
+                                <li>
+                                    <h4><a href="#">Уход за удилищем</a></h4>
+                                    <span class="rubric">Раздел: <a href="#">Насадки и наживки</a></span>
+                                    <p>Всегда транспортируйте удилище в чехле или в тубусе; Не потеряйте пробочку, которой закрывается нижняя секция удилища; Всегда держите удилище в руке или кладите на специальные подставки.</p>
+                                </li>
+                                <li class="last">
+                                    <h4><a href="#">Растительная насадка: творожное тесто</a></h4>
+                                    <span class="rubric">Раздел: <a href="#">Насадки и наживки</a></span>
+                                    <p>В надежде заманить cтальноголовую форель в горные реки Санта Моники, транспортное агентство Калифорнии планирует потратить $ 935 000 чтобы оградить часть пляжа грядой камней.</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="more"><span>Все отчеты</span></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="columns-wrap">
+                
+                    <div class="bite-time">
+                        <h2 class="heading"><span>Сейчас ловится</span></h2>
+                        <ul>
+                            <li><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Карп</a></li>
+                            <li><img src="images/content/bite_fish_2.jpg" alt="" /><a href="#">Сом</a></li>
+                            <li><img src="images/content/bite_fish_3.jpg" alt="" /><a href="#">Щука</a></li>
+                            <li><img src="images/content/bite_fish_4.jpg" alt="" /><a href="#">Толстолобик</a></li>
+                            <li><img src="images/content/bite_fish_5.jpg" alt="" /><a href="#">Динозавр Дино</a></li>
+                        </ul>
+                        <a href="#" class="more"><span>Прогноз уловов</span></a>
+                    </div>
+                
+                    <div class="top-bait">
+                        <h2 class="heading"><span>Топ-5 приманок</span></h2>
+                        <img src="images/content/top_bait.jpg" alt="" />
+                        <ol>
+                            <li class="first">
+                                <h4><a href="#">Blue Fox (International) Original Vibrax</a></h4>
+                                <dl>
+                                    <dt>Тип:</dt>
+                                    <dd>Мягкие пластиковые приманки</dd>
+                                    <dt>Длина (см.):</dt>
+                                    <dd>7</dd>
+                                    <dt>Вес (гр.):</dt>
+                                    <dd>7</dd>
+                                    <dt>Диапазон раб. глубин (м.):</dt>
+                                    <dd>1.2 - 4.5</dd>
+                                    <dt>Цвет:</dt>
+                                    <dd>S</dd>
+                                </dl>
+                            </li>
+                            <li><a href="#">Rapala Skitter Prop</a></li>
+                            <li><a href="#">Salmo EXECUTOR SR</a></li>
+                            <li><a href="#">Mepps Aglia Long plain treble</a></li>
+                            <li><a href="#">Гаамарус (бормаш, бокоплав)</a></li>
+                        </ol>
+                    </div>
+                
+                    <div class="top-fly">
+                        <h2 class="heading"><span>Топ-5 наживок</span></h2>
+                        <ul>
+                            <li class="first">
+                                <img src="images/content/top_fly.jpg" alt="" />
+                                <h4>1. Опарыш</h4>
+                            </li>
+                            <li>2. Навозный червь</li>
+                            <li>3. Бокоплав</li>
+                            <li>4. Тушканчик</li>
+                            <li>5. Динозавр Дино</li>
+                        </ul>
+                        <a href="#" class="more"><span>Все наживки</span></a>
+                    </div>
+                        
+                </div>
+                
+                <div class="columns-wrap">
+
+				<div class="column-3">
+                    <div class="pulp-fiction">
+                        <h2 class="heading"><span>К летнему сезону</span></h2>
+                        <ul>
+                            <li>
+                                <h4><a href="#">Моллюски</a></h4>
+                                <span class="rubric">Раздел: <a href="#">Насадки и наживки</a></span>
+                                <p>На мясо моллюсков беззубки, перловицы, а также улиток (прудовик, дрейссена, шаровка и пр.) клюют окунь, голавль, угорь и другие рыбы.</p>
+                            </li>
+                            <li>
+                                <h4><a href="#">Растительная насадка: творожное тесто</a></h4>
+                                <span class="rubric">Раздел: <a href="#">Насадки и наживки</a></span>
+                                <p>На мясо моллюсков беззубки, перловицы, а также улиток (прудовик, дрейссена, шаровка и пр.) клюют окунь, голавль, угорь и другие рыбы.</p>
+                            </li>
+                            <li class="last">
+                                <h4><a href="#">Уход за удилищем</a></h4>
+                                <span class="rubric">Раздел: <a href="#">Насадки и наживки</a></span>
+                                <p>На мясо моллюсков беззубки, перловицы, а также улиток (прудовик, дрейссена, шаровка и пр.) клюют окунь, голавль, угорь и другие рыбы.</p>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+                    
+                </div>
+                
+                <div class="columns-wrap">
+                
+                    <div class="column-1">
+                
+                        <div class="statistic">
+                            <h2 class="heading"><span>Статистика</span></h2>
+                            <dl>
+                                <dt class="saved">Сохранено жизней:</dt>
+                                <dt class="saved-total">824</dt>
+                                <dt class="catched">Поймано всего:</dt>
+                                <dd class="catched-weight">749,4 кг</dd>
+                                <dd class="catched-qty">4140 шт.</dd>
+                                <dt class="set-free">Отпущено на свободу:</dt>
+                                <dd class="set-free-weight">122,2 кг</dd>
+                                <dd class="set-free-qty">824 шт.</dd>
+                            </dl>
+                            <a href="#" class="more"><span>Вся статистика</span></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="column-2">
+                    
+                        <div class="records">
+                            <h2 class="heading"><span>Рекорды</span></h2>
+                            <table class="records-table" cellpadding="0" cellspacing="0" width="100%">
+                                <col width="204" />
+                                <col width="70" />
+                                <col />
+                                <thead>
+                                    <tr>
+                                        <th>Вид рыбы</th>
+                                        <th class="a-center">Вес (кг)</th>
+                                        <th>Кто словил</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="species"><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Сом</a></td>
+                                        <td class="weight"><span>23</span></td>
+                                        <td>
+                                            <ul>
+                                                <li class="author"><a href="#">Homer Simpson123</a></li>
+                                                <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                                <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="species"><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Сом</a></td>
+                                        <td class="weight"><span>23</span></td>
+                                        <td>
+                                            <ul>
+                                                <li class="author"><a href="#">Homer Simpson123</a></li>
+                                                <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                                <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="species"><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Сом</a></td>
+                                        <td class="weight"><span>23</span></td>
+                                        <td>
+                                            <ul>
+                                                <li class="author"><a href="#">Homer Simpson123</a></li>
+                                                <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                                <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="species"><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Сом</a></td>
+                                        <td class="weight"><span>23</span></td>
+                                        <td>
+                                            <ul>
+                                                <li class="author"><a href="#">Homer Simpson123</a></li>
+                                                <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                                <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="species"><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Сом</a></td>
+                                        <td class="weight"><span>23</span></td>
+                                        <td>
+                                            <ul>
+                                                <li class="author"><a href="#">Homer Simpson123</a></li>
+                                                <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                                <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="species"><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Сом</a></td>
+                                        <td class="weight"><span>23</span></td>
+                                        <td>
+                                            <ul>
+                                                <li class="author"><a href="#">Homer Simpson123</a></li>
+                                                <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                                <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="species"><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Сом</a></td>
+                                        <td class="weight"><span>23</span></td>
+                                        <td>
+                                            <ul>
+                                                <li class="author"><a href="#">Homer Simpson123</a></li>
+                                                <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                                <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="species"><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Сом</a></td>
+                                        <td class="weight"><span>23</span></td>
+                                        <td>
+                                            <ul>
+                                                <li class="author"><a href="#">Homer Simpson123</a></li>
+                                                <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                                <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="species"><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Сом</a></td>
+                                        <td class="weight"><span>23</span></td>
+                                        <td>
+                                            <ul>
+                                                <li class="author"><a href="#">Homer Simpson123</a></li>
+                                                <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                                <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="species"><img src="images/content/bite_fish_1.jpg" alt="" /><a href="#">Сом</a></td>
+                                        <td class="weight"><span>23</span></td>
+                                        <td>
+                                            <ul>
+                                                <li class="author"><a href="#">Homer Simpson123</a></li>
+                                                <li class="rating"><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /><img src="images/ico_star.png" alt="" /></li>
+                                                <li class="medals">Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            
+            </div>
+            
+            <div class="sidebar">
+            
+                <div class="banner banner-80">
+                    <img src="images/content/banner_300_80.jpg" alt="" />
+                </div>
+                <div class="banner banner-250">
+					<div class="banner-content">
+						<img src="images/content/banner_300_250.jpg" alt="" />
+					</div>
+                </div>
+                <div class="press-relises">
+                    <h2 class="heading"><span>Пресс-релизы</span></h2>
+                    <ul>
+                    	<li>
+                    		<h4><a href="#">Первый официальный клубный слет «F.тур: Хищник — 2009»</a></h4>
+                    		<p>31 октября 2009 года на базе Бубновская (пос. Бубновская слобода, Киевская обл, Кременчужское водохранилище) прошли первые лубный...</p>
+                    	</li>
+                    	<li class="last">
+                    		<h4><a href="#">Первый официальный клубный слет «F.тур: Хищник — 2009»</a></h4>
+                    		<p>31 октября 2009 года на базе Бубновская (пос. Бубновская слобода, Киевская обл, Кременчужское водохранилище) прошли первые лубный слет и соревнования по рыбной ловле информационного сервиса fgids.com — «F.Тур: Хищник-2009»...</p>
+                    	</li>
+                    </ul>
+                    <a href="#" class="more"><span>Все пресс-релизы</span></a>
+                </div>
+                <div class="banner banner-250">
+					<div class="banner-content">
+						<img src="images/content/banner_300_250.jpg" alt="" />
+					</div>
+                </div>
+                <div class="rounded tags-cloud">
+					<div class="rounded-wrap">
+						<ul>
+							<li><a href="#" class="tag1">сом</a></li>
+							<li><a href="#" class="tag2">щука</a></li>
+							<li><a href="#" class="tag3">рыбалка</a></li>
+							<li><a href="#" class="tag4">улов</a></li>
+							<li><a href="#" class="tag5">вот это да</a></li>
+							<li><a href="#" class="tag6">опарыш</a></li>
+							<li><a href="#" class="tag7">приманка</a></li>
+							<li><a href="#" class="tag8">удачно</a></li>
+							<li><a href="#" class="tag9">толстолобик</a></li>
+							<li><a href="#" class="tag10">карп</a></li>
+						</ul>
+						<p><a href="#" class="more"><span>Все метки</span></a></p>
+					</div>
+                </div>
+                
+                <div class="discussions">
+					<h2 class="heading"><span>Обсуждения</span></h2>
+					<div class="rounded">
+						<div class="rounded-wrap">
+							<dl>
+								<dt><a href="#">Re: 1-4.. Размышления на тему..</a></dt>
+								<dd>
+									<ul>
+										<li><a href="#">gorunuch</a></li>
+										<li>Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+									</ul>
+								</dd>
+								<dt><a href="#">Re: 1-4.. Размышления на тему..</a></dt>
+								<dd>
+									<ul>
+										<li><a href="#">Albert</a></li>
+									</ul>
+								</dd>
+								<dt><a href="#">Re: 1-4.. Размышления на тему..</a></dt>
+								<dd>
+									<ul>
+										<li><a href="#">logger</a></li>
+										<li>Медали: <img src="images/ico_medal_1.png" alt="" /><img src="images/ico_medal_2.png" alt="" /></li>
+									</ul>
+								</dd>
+							</dl>
+							<p><a href="#" class="more"><span>Все обсуждения</span></a></p>
+						</div>
+					</div>
+                </div>
+                
+                <div class="voting">
+                    <h2 class="heading"><span>Голосование</span></h2>
+					<div class="rounded">
+						<div class="rounded-wrap">
+							<div class="voting-box">
+								<form action="" method="post">
+									<dl>
+										<dt>Суть вопроса, который, как бы, вынесен на голосование?</dt>
+										<dd><label for="vote_1"><input type="checkbox" name="vote_1" id="vote_1" />Вариант ответа 1</label></dd>
+										<dd><label for="vote_2"><input type="checkbox" name="vote_2" id="vote_2" />Вариант ответа 2</label></dd>
+										<dd><label for="vote_3"><input type="checkbox" name="vote_3" id="vote_3" />Вариант ответа 3</label></dd>
+										<dd><label for="vote_4"><input type="checkbox" name="vote_4" id="vote_4" />Вариант ответа 4</label></dd>
+										<dd><label for="vote_5"><input type="checkbox" name="vote_5" id="vote_5" />Вариант ответа 5</label></dd>
+										<dd><label for="vote_6"><input type="checkbox" name="vote_6" id="vote_6" />Вариант ответа 6</label></dd>
+									</dl>
+									<button type="submit" class="button" title="Голосовать"><span><span>Голосовать</span></span></button> <a href="#" class="more"><span>Узнать результаты</span></a>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="footer">	
+		
+        <div class="wrap">
+            
+            <div class="nav">
+                <ul>
+                    <li class="home"><a href="#">На главную</a></li>
+                    <li><a href="#">Персональная часть</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">F. Новости</a></li>
+                    <li><a href="#">F. Сообщество</a></li>
+                    <li><a href="#">Энциклопедия рыбалки</a></li>
+                    <li><a href="#">F. Отчеты</a></li>
+                    <li><a href="#">F. Статистика</a></li>
+                    <li><a href="#">F. Рейтинги</a></li>
+                    <li><a href="#">F. Галерея</a></li>
+                    <li><a href="#">F. Форум</a></li>
+                </ul>
+            </div>
+            
+            <p class="design"><strong>Идея и разработка:</strong> F.GiDs &copy;. 2009-2010<br /><strong>Powered By:</strong> WEDay Studio.</p>
+            
+            <p class="contacts"><strong>E-mail:</strong> info@fgids.com<br /><strong>Тел.:</strong> +38 (044) 221-45-44</p>
+            
+            <p class="copyright">Все права защищены. При цитировании и использовании любых материалов гиперссылка на FGiDs.com обязательна. Републикация авторских материалов F.GiDs возможна только с письменного согласия F.GiDs. </p>
+            
+        </div>
+    
+    </div>
+    
+</body>
+
+</html>
